@@ -1,0 +1,146 @@
+.team-section {
+  padding: 50px 0 170px;
+  background-color: gray;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+/* 구분선 */
+.section-divider {
+  margin: 60px auto;
+  width: 60%;
+  border-top: 2px solid #ccc;
+  opacity: 0.3;
+}
+
+/* 공통 헤딩 섹션 */
+.overview, .skills, .effect, .future-section {
+  margin: 60px auto;
+  max-width: 900px;
+  padding: 20px;
+  text-align: center;
+}
+
+.overview h2, .skills h2, .effect h2, .future-section h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffde59;
+}
+
+.overview p, .effect ul, .future-section {
+  font-size:  30px;
+}
+
+/* 현재 사진 */
+.team-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 90px;
+  margin-top: 20px;
+}
+
+.team-img img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* 기능 슬라이드 */
+.target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding-bottom: 100px;
+}
+
+.arrow {
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #ffde59;
+  color: #000;
+  border-color: #ffde59;
+}
+
+.target-content {
+  width: 600px;
+  height: 500px;
+  background-color: #444;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Target {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.target-description {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+}
+
+/* 기대효과 리스트 */
+.effect ul {
+  list-style: disc;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+  padding-left: 20px;
+}
+
+/* 미래 섹션 */
+.future-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.future-imgs {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: nowrap; /* ✅ 줄 바꿈 방지 */
+  overflow-x: auto;   /* ✅ 작을 땐 스크롤로 */
+  padding-bottom: 10px;
+}
+
+.future-imgs img {
+  width: 45%;              /* ✅ 양쪽 이미지가 나란히 */
+  max-width: 500px;
+  height: auto;
+  border-radius: 40px;
+  flex-shrink: 0;          /* ✅ 스크롤 시 줄어들지 않게 */
+}

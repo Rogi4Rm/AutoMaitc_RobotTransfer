@@ -1,0 +1,31 @@
+# RogiArm 프로젝트
+
+## 개요  
+RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 수집하고, React 기반 웹 대시보드에서 실시간 모니터링 및 영상 관리를 제공하는 프로젝트입니다.
+
+## 사용 기술  
+- **Frontend:** React, Recoil, react-hook-form, @hello-pangea/dnd  
+- **Backend:** Node.js, Express  
+- **Database:** SQLite  
+- **Hardware 통신:** SerialPort (Node.js serialport 라이브러리)  
+- **기타:** CORS, REST API  
+
+## 주요 기능  
+- 로봇팔 센서 및 영상 데이터 실시간 수집 및 저장  
+- 시리얼 연결 실패 시 1분 간격 더미 데이터 자동 생성  
+- 날짜별 영상 및 센서 데이터 조회  
+- 영상 재생 및 색상별 데이터 개수 표시  
+- 투두 리스트 및 커스텀 카테고리 관리 기능 (Recoil + Drag & Drop)  
+
+## 기술 포인트  
+- Node.js SerialPort 라이브러리를 통한 시리얼 통신 구현 및 오류 핸들링  
+- SQLite를 사용한 가벼운 DB 구축 및 CRUD API 설계  
+- React에서 react-hook-form과 드래그 앤 드롭 라이브러리 조합으로 유저 편의성 강화  
+- 서버와 클라이언트간 CORS 이슈 해결  
+- 한국 시간 기준으로 날짜/시간 처리 및 저장  
+
+## 어려웠던 점 및 해결 방법  
+- **시리얼포트 초기화 오류**: `SerialPort is not a constructor` 문제 → `const { SerialPort } = require('serialport');` 로 수정  
+- **한국시간 처리 문제**: 서버에서 UTC 시간 저장 문제 → 한국시간 변환 함수 적용  
+- **더미 데이터 생성 문제**: 시리얼 연결 실패 시 1분마다만 더미 생성하도록 개선  
+- **모듈 경로 문제**: `MODULE_NOT_FOUND` 오류 → 경로 수정 및 폴더 구조 정리

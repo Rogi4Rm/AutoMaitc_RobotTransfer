@@ -1,0 +1,14 @@
+import React from 'react';
+import './Header.css';
+
+function Header() {
+  return (
+    <header>
+      <img src={process.env.PUBLIC_URL + '/assets/image/Logo2.png'} alt="RogiArm Logo" className="logo" />
+      <h1>RogiArm</h1>
+      <p>로봇 팔을 이용한 자동 분류 시스템</p>
+    </header>
+  );
+}
+
+export default Header;

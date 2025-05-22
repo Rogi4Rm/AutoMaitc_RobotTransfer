@@ -1,0 +1,28 @@
+nav {
+  background-color: #444;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center; /* 추가: nav 내부 중앙 정렬 */
+  width: 100%;        /* 추가: 전체 폭 사용 */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;            /* 브라우저 기본 여백 제거 */
+  margin: 0;             /* 브라우저 기본 여백 제거 */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

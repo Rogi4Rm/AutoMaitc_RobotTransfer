@@ -1,0 +1,166 @@
+/* 전체 컨테이너 */
+.control-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh; /* 전체 화면 높이 */
+  padding-bottom: 80px;
+  background-color: gray;
+  box-sizing: border-box;
+}
+
+/* 왼쪽 패널 */
+.left-panel {
+  flex: 1;  /* 왼쪽 패널의 flex 비율을 1로 설정 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* camera-box, sensor-box 간격 */
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 2px solid #ccc;
+  height: 100%;
+}
+
+/* camera-box와 sensor-box가 1:1 비율로 */
+.camera-box,
+.sensor-box {
+  flex: 1; /* 1:1 비율 */
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.camera-box h2,
+.sensor-box h2 {
+  margin-bottom: 10px;
+}
+
+.radar-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 오른쪽 패널 */
+.right-panel {
+  flex: 1;  /* 오른쪽 패널의 flex 비율을 1로 설정 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+/* 오른쪽 패널의 항목 비율 설정: 2:3:2:3 */
+.mode-box {
+  flex: 2;  /* 2 */
+}
+
+.arm-box {
+  flex: 3;  /* 3 */
+}
+
+.gripper-box {
+  flex: 2;  /* 2 */
+}
+
+.drive-box {
+  flex: 3;  /* 3 */
+}
+
+.mode-box,
+.arm-box,
+.gripper-box,
+.drive-box {
+  background-color: #f0f0f5;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* 모드 버튼 */
+.mode-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.mode-button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mode-button.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* XYZ 좌표 */
+.xyz-coordinates p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.key-guide p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 집게 상태 */
+.gripper-box p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* 차체 이동 버튼 */
+.direction-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.horizontal-controls {
+  display: flex;
+  gap: 30px;
+}
+
+.direction-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.direction-btn.pressed {
+  background-color: #28a745;
+  color: white;
+}
+
+/* 차체 이동 중 표시 */
+.drive-box div {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff5722;
+}
