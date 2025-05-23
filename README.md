@@ -30,19 +30,19 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 - **모듈 경로 문제**: `MODULE_NOT_FOUND` 오류 → 경로 수정 및 폴더 구조 정리
 
 ## 서버, 사이트사용방법
-- **1단계** : clone을 이용하여 전체 복제 후 맥북은 터미널, 윈도우는 명령크프롬프트(CMD)에서 각각 client, server 들어가서 npm install을 실행한다
-- **2단계** : server에서는 **node index.js** 명령어를 실행하여 4000포트에 서버를 실행, client에서는 **npm start** 명령어를 쳐서 3000포트에 실행
+- **1** : clone을 이용하여 전체 복제 후 맥북은 터미널, 윈도우는 명령크프롬프트(CMD)에서 각각 client, server 들어가서 npm install을 실행한다
+- **2** : server에서는 **node index.js** 명령어를 실행하여 4000포트에 서버를 실행, client에서는 **npm start** 명령어를 쳐서 3000포트에 실행
     - **serial**연결이 안되어 있을 경우 더미데이터 1분마다 생성
-- **3단계** : 페이지 **localhost:3000**에 들어가서 설명 및 통제, 데이터를 확인할 수 있다
+- **3** : 페이지 **localhost:3000**에 들어가서 설명 및 통제, 데이터를 확인할 수 있다
 
 ## sqlite3 사용방법
-- **1단계 sqlite3 접속방법** : 터미널에 **sqlite3 ./db/sqlite.db**를 작성하여 접속
+- **sqlite3 접속방법** : 터미널에 **sqlite3 ./db/sqlite.db**를 작성하여 접속
 - **테이블 확인** : **.tables**를 작성하여 테이블 확인 
     - videos : Video파일
     - stats : 상자 데이터 및 날짜 파일
-- **2단계 테이블별 데이터 확인** : **SELECT * FROM stats**을 사용하여 stats정보 확인
-- **3단계 더미데이터 삭제** : **DELETE FROM stats WHERE date LIKE 'dummy-%';**을 사용하여 dummy데이터만 삭제
-- **4단계 전체데이터 삭제** : **DELETA FROM stats**을 사용하여 stats 전체데이터 삭제
+- **테이블별 데이터 확인** : **SELECT * FROM stats**을 사용하여 stats정보 확인
+- **더미데이터 삭제** : **DELETE FROM stats WHERE date LIKE 'dummy-%';**을 사용하여 dummy데이터만 삭제
+- **전체데이터 삭제** : **DELETA FROM stats**을 사용하여 stats 전체데이터 삭제
 
 
 ## 날짜별 현황
