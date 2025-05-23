@@ -11,7 +11,7 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 - **기타:** CORS, REST API
 
 ## 사용 라이브러리
-#### Frontend (client)
+### Frontend (client)
 - react@19.1.0
 - react-dom@19.1.0
 - recoil
@@ -21,7 +21,7 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 - axios@1.9.0
 - uuid
 
-#### Backend (server)
+### Backend (server)
 - express@5.1.0
 - cors@2.8.5
 - serialport@13.0.0
