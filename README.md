@@ -8,9 +8,27 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 - **Backend:** Node.js, Express  
 - **Database:** SQLite  
 - **Hardware 통신:** SerialPort (Node.js serialport 라이브러리)  
-- **기타:** CORS, REST API  
+- **기타:** CORS, REST API
 
-## 주요 기능  
+## 사용 라이브러리
+
+#### Frontend (client)
+- react@19.1.0
+- react-dom@19.1.0
+- recoil
+- react-hook-form
+- @hello-pangea/dnd
+- react-router-dom@7.5.3
+- axios@1.9.0
+- uuid
+
+#### Backend (server)
+- express@5.1.0
+- cors@2.8.5
+- serialport@13.0.0
+- sqlite3@5.1.7
+
+## 주요 기능
 - 로봇팔 센서 및 영상 데이터 실시간 수집 및 저장  
 - 시리얼 연결 실패 시 1분 간격 더미 데이터 자동 생성  
 - 날짜별 영상 및 센서 데이터 조회  
@@ -26,10 +44,10 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 ## 어려웠던 점 및 해결 방법  
 - **시리얼포트 초기화 오류**: `SerialPort is not a constructor` 문제 → `const { SerialPort } = require('serialport');` 로 수정  
 - **한국시간 처리 문제**: 서버에서 UTC 시간 저장 문제 → 한국시간 변환 함수 적용  
-- **더미 데이터 생성 문제**: 시리얼 연결 실패 시 1분마다만 더미 생성하도록 개선  
+- **더미 데이터 생성 문제**: 시리얼 연결 실패 시 15초마다 더미 생성하도록 개선  
 - **모듈 경로 문제**: `MODULE_NOT_FOUND` 오류 → 경로 수정 및 폴더 구조 정리
 
-## 서버, 사이트사용방법
+## 서버, 사이트사용방법 (라이브러리 설치 먼저 해주세요)
 - **1** : clone을 이용하여 전체 복제 후 맥북은 터미널, 윈도우는 명령크프롬프트(CMD)에서 각각 client, server 들어가서 npm install을 실행한다
 - **2** : server에서는 **node index.js** 명령어를 실행하여 4000포트에 서버를 실행, client에서는 **npm start** 명령어를 쳐서 3000포트에 실행
     - **serial**연결이 안되어 있을 경우 더미데이터 1분마다 생성
