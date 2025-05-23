@@ -11,7 +11,6 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 - **기타:** CORS, REST API
 
 ## 사용 라이브러리
-
 #### Frontend (client)
 - react@19.1.0
 - react-dom@19.1.0
