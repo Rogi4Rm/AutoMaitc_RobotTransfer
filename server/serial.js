@@ -34,6 +34,7 @@ function sendData(data) {
 }
 
 module.exports = {
+  db,
   initSerial,
   sendData,
 };

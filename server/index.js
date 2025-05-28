@@ -3,10 +3,16 @@ const path = require("path");
 
 const videosRouter = require("./router/videos");
 const statsRouter = require("./router/stats");
-const serial = require("./serial");
+const listRouter = require('./routes/list');  // 경로는 실제 위치에 맞게!
+
+// 시리얼 리스너 실행
+require("./serial/serialListener"); // 실행만 하면 되므로 import만 해도 동작함
 
 const app = express();
 app.use(express.json());
+
+// 라우터 등록 - 이 부분 꼭 확인하세요!
+app.use('/list', listRouter);
 
 app.use("/videos", videosRouter);
 app.use("/stats", statsRouter);
@@ -14,10 +20,6 @@ app.use("/stats", statsRouter);
 app.get("/", (req, res) => {
   res.send("Express + SQLite + Serial server running");
 });
-
-// 시리얼 포트 경로는 환경변수나 config로 관리하는 게 좋음
-const SERIAL_PORT_PATH = "/dev/ttyUSB0"; // 예시 (윈도우면 COM3 등)
-serial.initSerial(SERIAL_PORT_PATH);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
