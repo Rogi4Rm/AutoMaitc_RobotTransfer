@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const cors = require("cors");
 
 const videosRouter = require("./router/videos");
 const statsRouter = require("./router/stats");
@@ -9,6 +10,7 @@ const listRouter = require('./routes/list');  // 경로는 실제 위치에 맞�
 require("./serial/serialListener"); // 실행만 하면 되므로 import만 해도 동작함
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 // 라우터 등록 - 이 부분 꼭 확인하세요!

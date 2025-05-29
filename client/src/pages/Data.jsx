@@ -33,15 +33,20 @@ export default function RogiArmDashboard() {
       <div className="dashboard-body">
         <aside className="dashboard-sidebar">
           <h4>📅 날짜</h4>
-          {list.map((item) => (
-            <div
-              key={item.file}
-              className="date-entry"
-              onClick={() => handleClick(item.file)}
-            >
-              {item.time}
-            </div>
-          ))}
+          {list.map((item) => {
+            const displayTime = item.time.startsWith("dummy-")
+            ? item.time.replace("dummy-", "")
+            : item.time;
+            return (
+              <div
+                key={item.file}
+                className="date-entry"
+                onClick={() => handleClick(item.file)}
+              >
+                {displayTime}
+              </div>
+            );
+          })}
         </aside>
 
         <main className="dashboard-main">
@@ -71,8 +76,7 @@ export default function RogiArmDashboard() {
             </section>
 
             <section className="panel small">
-              <h4>🎥 우노 카메라</h4>
-              {/* 추후 실시간 스트리밍 영상 연결 예정 */}
+
             </section>
           </div>
         </main>

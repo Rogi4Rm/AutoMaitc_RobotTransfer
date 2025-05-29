@@ -51,11 +51,43 @@ function getAllVideos() {
   });
 }
 
+function getAllStats() {
+  return new Promise((resolve, reject) => {
+    db.all("SELECT * FROM stats", [], (err, rows) => {
+      if (err) reject(err);
+      else {
+        // rows 그대로 전달해도 되고, 원하는 형태로 가공 가능
+        resolve(rows);
+      }
+    });
+  });
+}
+
+function getVideosByDate(date) {
+  return new Promise((resolve, reject) => {
+    db.get("SELECT * FROM videos WHERE date = ?", [date], (err, row) => {
+      if (err) reject(err);
+      else resolve(row);
+    });
+  });
+}
+
+
+function getStatsByDate(date) {
+  return new Promise((resolve, reject) => {
+    db.get("SELECT * FROM stats WHERE date = ?", [date], (err, row) => {
+      if (err) reject(err);
+      else resolve(row);
+    });
+  });
+}
+
+
 // 📦 비디오 추가
 function addVideo({ date, url, boxCounts }) {
   return new Promise((resolve, reject) => {
     const boxCountsStr = JSON.stringify(boxCounts);
-    const sql = `INSERT INTO Video (date, url, boxCounts) VALUES (?, ?, ?)`;
+    const sql = `INSERT INTO videos (date, url, boxCounts) VALUES (?, ?, ?)`;
     db.run(sql, [date, url, boxCountsStr], function (err) {
       if (err) reject(err);
       else resolve(this.lastID);
@@ -80,6 +112,9 @@ function insertStats({ date, red, green, blue }) {
 module.exports = {
   db,
   getAllVideos,
+  getAllStats,
+  getVideosByDate,
+  getStatsByDate,
   addVideo,
   insertStats,
 };
