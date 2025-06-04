@@ -28,3 +28,28 @@
 - **25.05.29**: 백엔드 서버와 프론트엔드 Data페이지와 연동하여 더미데이터 확인
 - **25.05.23**: 백엔드 서버 재구축, 더미데이터와 Data페이지 수정
 - **25.05.22**: 백엔드 서버 구성하였으나 깃허브 올리는 과정에서 충돌 발생으로 파일 전부 날라감
+
+## 🚀 서버 실행 방법
+```bash
+cd server
+npm install
+node index.js
+```
+
+## 🛠️ sqlite3 사용방법
+```sql
+# sqlite3 연결
+sqlite3 ./db/sqlite.db
+
+# 테이블확인
+.tables
+
+# stats정보 확인
+SELECT * FROM stats
+
+# dummy데이터만 삭제
+DELETE FROM stats WHERE date LIKE 'dummy-%';
+
+# stats 전체데이터 삭제
+DELETE FROM stats
+```
