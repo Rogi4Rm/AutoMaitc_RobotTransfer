@@ -30,7 +30,7 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 ```Sqlite3
 sqlite3 ./db/sqlite.db //sqlite3 연결
 .tables //테이블확인
-**SELECT * FROM stats //stats정보 확인
+SELECT * FROM stats //stats정보 확인
 DELETE FROM stats WHERE date LIKE 'dummy-%'; //dummy데이터만 삭제
 DELETA FROM stats //stats 전체데이터 삭제
 ```
