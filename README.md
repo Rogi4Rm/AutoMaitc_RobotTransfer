@@ -27,10 +27,19 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 - **3** : 페이지 **localhost:3000**에 들어가서 설명 및 통제, 데이터를 확인할 수 있다
 
 ## sqlite3 사용방법
-```Sqlite3
-sqlite3 ./db/sqlite.db //sqlite3 연결
-.tables //테이블확인
-SELECT * FROM stats //stats정보 확인
-DELETE FROM stats WHERE date LIKE 'dummy-%'; //dummy데이터만 삭제
-DELETA FROM stats //stats 전체데이터 삭제
+```sql
+# sqlite3 연결
+sqlite3 ./db/sqlite.db
+
+# 테이블확인
+.tables
+
+# stats정보 확인
+SELECT * FROM stats
+
+# dummy데이터만 삭제
+DELETE FROM stats WHERE date LIKE 'dummy-%';
+
+# stats 전체데이터 삭제
+DELETE FROM stats
 ```
