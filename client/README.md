@@ -1,4 +1,4 @@
-# RogiArm 프로젝트 Front-End
+# RogiArm 프로젝트 - 프론트엔드
 
 ## 사용 라이브러리
 ### Frontend (client)
