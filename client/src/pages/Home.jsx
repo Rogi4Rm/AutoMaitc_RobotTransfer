@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './Home.css';
+import './Home.css'; // 스타일시트 불러오기
 
+// 상단 팀 이미지(슬라이드에 사용될 수 있음)
 const images = [
   { src: "/assets/image/2.PNG", alt: '팀 1' }
 ];
 
+// 주요 기능 설명에 사용할 이미지와 설명 문구들
 const targetImages = [
   {
     src: process.env.PUBLIC_URL + '/assets/image/4.png',
@@ -19,20 +21,25 @@ const targetImages = [
 ];
 
 function Home() {
+  // 팀 이미지 인덱스 상태
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // 주요 기능 슬라이드 인덱스 상태
   const [targetIndex, setTargetIndex] = useState(0);
 
+  // 팀 이미지 자동 슬라이드 기능 (5초마다 이미지 변경)
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
     }, 5000);
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalId); // 컴포넌트 언마운트 시 타이머 해제
   }, []);
 
+  // 왼쪽 버튼 클릭 시 이전 기능 이미지로 이동
   const handlePrev = () => {
     setTargetIndex((prevIndex) => (prevIndex - 1 + targetImages.length) % targetImages.length);
   };
 
+  // 오른쪽 버튼 클릭 시 다음 기능 이미지로 이동
   const handleNext = () => {
     setTargetIndex((prevIndex) => (prevIndex + 1) % targetImages.length);
   };
@@ -40,7 +47,7 @@ function Home() {
   return (
     <section className="team-section">
 
-      {/* 개요 */}
+      {/* 개요 섹션 */}
       <div className="overview">
         <h2>개요</h2>
         <p>
@@ -49,6 +56,7 @@ function Home() {
         </p>
       </div>
 
+      {/* 팀 이미지 영역 */}
       <div className="team-gallery">
         <div className="team-img">
           <img src={images[currentImageIndex].src} alt={images[currentImageIndex].alt} />
@@ -57,12 +65,15 @@ function Home() {
 
       <hr className="section-divider" />
 
-      {/* 주요 기능 슬라이드 */}
+      {/* 예상 기능 슬라이드 섹션 */}
       <div className="skills">
         <h2>예상 기능</h2>
       </div>
       <div className="target">
+        {/* 이전 기능으로 이동하는 화살표 버튼 */}
         <button onClick={handlePrev} className="arrow left">←</button>
+
+        {/* 현재 기능 이미지와 설명 표시 */}
         <div className="target-content">
           <img src={targetImages[targetIndex].src} alt={targetImages[targetIndex].alt} className="Target" />
           <div className="target-description">
@@ -71,12 +82,14 @@ function Home() {
             ))}
           </div>
         </div>
+
+        {/* 다음 기능으로 이동하는 화살표 버튼 */}
         <button onClick={handleNext} className="arrow right">→</button>
       </div>
 
       <hr className="section-divider" />
 
-      {/* 기대효과 */}
+      {/* 기대효과 섹션 */}
       <div className="effect">
         <h2>기대효과</h2>
         <ul>
@@ -88,7 +101,7 @@ function Home() {
 
       <hr className="section-divider" />
 
-      {/* 미래 */}
+      {/* 미래 비전 섹션 */}
       <div className="future-section">
         <h2>미래</h2>
         <div className='future-imgs'>

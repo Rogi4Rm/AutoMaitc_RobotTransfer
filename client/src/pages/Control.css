@@ -34,11 +34,13 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* 박스 내 제목 스타일 */
 .camera-box h2,
 .sensor-box h2 {
   margin-bottom: 10px;
 }
 
+/* 센서 텍스트 강조 */
 .radar-text {
   font-size: 1.2rem;
   font-weight: bold;
@@ -59,18 +61,22 @@
   flex: 2;  /* 2 */
 }
 
+/* 각 박스 높이 비율 */
 .arm-box {
   flex: 3;  /* 3 */
 }
 
+/* 각 박스 높이 비율 */
 .gripper-box {
   flex: 2;  /* 2 */
 }
 
+/* 각 박스 높이 비율 */
 .drive-box {
   flex: 3;  /* 3 */
 }
 
+/* 공통 박스 스타일 */
 .mode-box,
 .arm-box,
 .gripper-box,
@@ -81,6 +87,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* 박스 제목 */
 h2 {
   margin-bottom: 10px;
   font-size: 1.2rem;
@@ -93,6 +100,7 @@ h2 {
   gap: 10px;
 }
 
+/* 기본 버튼 스타일 */
 .mode-button {
   flex: 1;
   padding: 10px 0;
@@ -105,6 +113,7 @@ h2 {
   transition: background-color 0.3s;
 }
 
+/* 선택된 버튼 강조 */
 .mode-button.selected {
   background-color: #007bff;
   color: #fff;
@@ -116,6 +125,7 @@ h2 {
   font-size: 1rem;
 }
 
+/* 키 조작 가이드 */
 .key-guide p {
   margin: 3px 0;
   font-size: 0.9rem;
@@ -137,11 +147,13 @@ h2 {
   gap: 10px;
 }
 
+/* 좌우 버튼 정렬 */
 .horizontal-controls {
   display: flex;
   gap: 30px;
 }
 
+/* 버튼 기본 스타일 */
 .direction-btn {
   width: 50px;
   height: 50px;
@@ -153,6 +165,7 @@ h2 {
   transition: background-color 0.2s;
 }
 
+/* 눌렀을 때 효과 */
 .direction-btn.pressed {
   background-color: #28a745;
   color: white;

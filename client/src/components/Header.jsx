@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './Header.css'; //Header스타일 임포트
 
 function Header() {
   return (

@@ -1,3 +1,4 @@
+/*헤더의 스타일*/
 header {
   display: flex;
   align-items: center;  /* 세로 중앙 정렬 */
@@ -8,22 +9,24 @@ header {
   flex-direction: column;  /* 수직 방향으로 정렬 */
   text-align: center; /* 중앙 정렬 */
 }
-
+/*로고 스타일*/
 .logo {
   position: absolute;
   left: 20px;  /* 로고를 왼쪽 끝으로 배치 */
   width: 50px;  /* 로고 크기 */
   height: auto;
 }
-
-header h1, header p {
+/*제목,부제의 스타일*/
+header h1 {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
   margin: 5px 0;  /* 위아래 여백 추가 */
 }
-
+/*부제의 스타일*/
 header p {
   font-size: 14px;
+  font-weight: bold;
   color: #ff6;
+  margin: 5px 0;  /* 위아래 여백 추가 */
 }

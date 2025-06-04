@@ -1,3 +1,4 @@
+/*네비게이션 스타일*/
 nav {
   background-color: #444;
   padding-top: 10px;
@@ -5,7 +6,7 @@ nav {
   text-align: center; /* 추가: nav 내부 중앙 정렬 */
   width: 100%;        /* 추가: 전체 폭 사용 */
 }
-
+/*네비게이션 ui의 스타일*/
 nav ul {
   display: flex;
   justify-content: center;
@@ -13,11 +14,11 @@ nav ul {
   padding: 0;            /* 브라우저 기본 여백 제거 */
   margin: 0;             /* 브라우저 기본 여백 제거 */
 }
-
+/*각 링크 스타일*/
 nav ul li {
   margin: 0 15px;
 }
-
+/*페이지 이름의 스타일*/
 nav ul li a {
   color: white;
   text-decoration: none;

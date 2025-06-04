@@ -1,3 +1,4 @@
+/* 전체 섹션 스타일: 회색 배경, 글꼴 지정, 흰색 텍스트 */
 .team-section {
   padding: 50px 0 170px;
   background-color: gray;
@@ -5,7 +6,7 @@
   color: white;
 }
 
-/* 구분선 */
+/* 구분선 스타일 */
 .section-divider {
   margin: 60px auto;
   width: 60%;
@@ -13,7 +14,7 @@
   opacity: 0.3;
 }
 
-/* 공통 헤딩 섹션 */
+/* 공통 섹션 스타일 (개요, 기능, 기대효과, 미래) */
 .overview, .skills, .effect, .future-section {
   margin: 60px auto;
   max-width: 900px;
@@ -21,18 +22,20 @@
   text-align: center;
 }
 
+/* 공통 제목 스타일 */
 .overview h2, .skills h2, .effect h2, .future-section h2 {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #ffde59;
+  color: #ffde59; /* 노란색 */
 }
 
+/* 본문 및 목록 스타일 */
 .overview p, .effect ul, .future-section {
-  font-size:  30px;
+  font-size: 30px;
 }
 
-/* 현재 사진 */
+/* 팀 사진 갤러리 레이아웃 */
 .team-gallery {
   display: flex;
   justify-content: center;
@@ -41,6 +44,7 @@
   margin-top: 20px;
 }
 
+/* 팀 이미지 스타일 */
 .team-img img {
   width: 100%;
   max-width: 800px;
@@ -48,7 +52,7 @@
   border-radius: 15px;
 }
 
-/* 기능 슬라이드 */
+/* 주요 기능 슬라이드 컨테이너 */
 .target {
   display: flex;
   align-items: center;
@@ -58,6 +62,7 @@
   padding-bottom: 100px;
 }
 
+/* 좌우 화살표 버튼 */
 .arrow {
   font-size: 2rem;
   width: 48px;
@@ -73,12 +78,14 @@
   transition: all 0.3s ease;
 }
 
+/* 화살표 hover 시 스타일 변경 */
 .arrow:hover {
   background-color: #ffde59;
   color: #000;
   border-color: #ffde59;
 }
 
+/* 기능 설명 이미지 및 텍스트 박스 */
 .target-content {
   width: 600px;
   height: 500px;
@@ -94,6 +101,7 @@
   overflow: hidden;
 }
 
+/* 기능 설명 이미지 스타일 */
 .Target {
   width: 100%;
   height: auto;
@@ -102,6 +110,7 @@
   margin-bottom: 15px;
 }
 
+/* 기능 설명 텍스트 스타일 */
 .target-description {
   font-size: 20px;
   font-weight: 500;
@@ -110,7 +119,7 @@
   color: #fff;
 }
 
-/* 기대효과 리스트 */
+/* 기대효과 리스트 스타일 */
 .effect ul {
   list-style: disc;
   text-align: left;
@@ -119,28 +128,30 @@
   padding-left: 20px;
 }
 
-/* 미래 섹션 */
+/* 미래 섹션 전체 정렬 */
 .future-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* 미래 이미지 갤러리 (가로 스크롤) */
 .future-imgs {
   display: flex;
   flex-direction: row;
   gap: 30px;
   margin-top: 20px;
   justify-content: center;
-  flex-wrap: nowrap; /* ✅ 줄 바꿈 방지 */
-  overflow-x: auto;   /* ✅ 작을 땐 스크롤로 */
+  flex-wrap: nowrap; /* 줄 바꿈 방지 */
+  overflow-x: auto;   /* 가로 스크롤 가능 */
   padding-bottom: 10px;
 }
 
+/* 미래 이미지 개별 스타일 */
 .future-imgs img {
-  width: 45%;              /* ✅ 양쪽 이미지가 나란히 */
+  width: 45%;              /* 양쪽 이미지 너비 */
   max-width: 500px;
   height: auto;
   border-radius: 40px;
-  flex-shrink: 0;          /* ✅ 스크롤 시 줄어들지 않게 */
+  flex-shrink: 0;          /* 스크롤 시 줄어들지 않음 */
 }

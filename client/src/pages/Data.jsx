@@ -1,17 +1,25 @@
+// React 및 훅 import
 import React, { useState, useEffect } from "react";
 import "./Data.css";
 
 export default function RogiArmDashboard() {
+  // 날짜 리스트 상태
   const [list, setList] = useState([]);
+
+  // 선택된 날짜 상태
   const [selectedDate, setSelectedDate] = useState(null);
+
+  // 색깔별 상자 개수 상태
   const [boxCounts, setBoxCounts] = useState({});
 
+  // 컴포넌트 마운트 시 날짜 리스트 불러오기
   useEffect(() => {
     fetch("http://localhost:4000/list")
       .then((res) => res.json())
       .then((data) => setList(data));
   }, []);
 
+  // 날짜 클릭 시 해당 날짜의 박스 개수 데이터 가져오기
   const handleClick = async (date) => {
     setSelectedDate(date);
 
@@ -29,14 +37,19 @@ export default function RogiArmDashboard() {
   };
 
   return (
+    // 대시보드 전체 컨테이너
     <div className="dashboard-container">
       <div className="dashboard-body">
+        
+        {/* 사이드바 - 날짜 목록 */}
         <aside className="dashboard-sidebar">
           <h4>📅 날짜</h4>
           {list.map((item) => {
+            // dummy- 접두어 제거
             const displayTime = item.time.startsWith("dummy-")
-            ? item.time.replace("dummy-", "")
-            : item.time;
+              ? item.time.replace("dummy-", "")
+              : item.time;
+
             return (
               <div
                 key={item.file}
@@ -49,7 +62,10 @@ export default function RogiArmDashboard() {
           })}
         </aside>
 
+        {/* 메인 영역 */}
         <main className="dashboard-main">
+          
+          {/* 동영상 영역 */}
           <section className="panel large">
             <h4>🎥 우노 동영상</h4>
             {selectedDate ? (
@@ -63,7 +79,10 @@ export default function RogiArmDashboard() {
             )}
           </section>
 
+          {/* 하단 정보 영역 */}
           <div className="dashboard-subpanels">
+            
+            {/* 상자 개수 표시 */}
             <section className="panel small">
               <h4>📦 색깔별 상자 개수</h4>
               <ul>
@@ -75,8 +94,9 @@ export default function RogiArmDashboard() {
               </ul>
             </section>
 
+            {/* 향후 추가용 패널 */}
             <section className="panel small">
-
+              {/* TODO: 다른 정보 표시 영역 */}
             </section>
           </div>
         </main>

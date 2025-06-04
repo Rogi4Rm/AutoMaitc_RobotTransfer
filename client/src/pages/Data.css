@@ -1,5 +1,4 @@
-/* RogiArmDashboard.css */
-
+/* 전체 바디 스타일 설정 */
 body {
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
@@ -7,6 +6,7 @@ body {
   padding-bottom: 100px;
 }
 
+/* 대시보드 전체 컨테이너 */
 .dashboard-container {
   display: flex;
   flex-direction: column;
@@ -14,41 +14,47 @@ body {
   color: #fff;
 }
 
+/* 대시보드 본문: 사이드바 + 메인 영역 */
 .dashboard-body {
   display: flex;
   flex: 1;
   background-color: #bbb;
 }
 
+/* 사이드바 스타일 */
 .dashboard-sidebar {
   width: 200px;
   background-color: #d3d3d3;
   padding: 20px;
   color: #222;
-  overflow-y: auto;   /* 스크롤 가능 */
-  max-height: 100vh;  /* 화면 높이 기준 제한 */
+  overflow-y: auto;   /* 스크롤 가능하게 */
+  max-height: 100vh;  /* 화면 높이 초과 제한 */
 }
 
+/* 사이드바 제목 */
 .dashboard-sidebar h4 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
+/* 날짜 항목 스타일 */
 .date-entry {
   font-weight: bold;
   margin-bottom: 10px;
   border-bottom: 1px solid #888;
   padding: 5px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s;  /* hover 애니메이션 */
 }
 
+/* 날짜 hover 및 선택 시 스타일 */
 .date-entry:hover,
 .date-entry.active {
   background-color: #999;
   color: #fff;
 }
 
+/* 메인 영역 스타일 */
 .dashboard-main {
   flex: 1;
   padding: 20px;
@@ -58,11 +64,13 @@ body {
   max-height: 900px;
 }
 
+/* 하단 소패널 영역 (2개 이상일 때 수평 정렬) */
 .dashboard-subpanels {
   display: flex;
   gap: 20px;
 }
 
+/* 패널 공통 스타일 */
 .panel {
   background-color: #f0f0f0;
   color: #222;
@@ -71,25 +79,29 @@ body {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* 큰 패널 (동영상 영역) */
 .panel.large {
   flex: 1;
   min-height: 250px;
 }
 
-.panel.large video{
+/* 동영상 크기 및 정렬 */
+.panel.large video {
   width: 90%;
   height: 90%;
-  justify-content: center; /* 가로 중앙 */
-  align-items: center;     /* 세로 중앙 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center;     /* 세로 중앙 정렬 */
 }
 
+/* 날짜 미선택 시 메시지 스타일 */
 .video {
-    text-align: center;
-    font-size: x-large;
-    font-weight: bolder;
-    color: red;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  color: red;
 }
 
+/* 작은 패널 (예: 상자 개수 표시 등) */
 .panel.small {
   flex: 1;
   min-height: 150px;
