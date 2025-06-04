@@ -14,9 +14,3 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 ## 각 구성별 README
 - [Back-End (서버)](server/README.md) : Node.js 기반 Sqlite3 DB관리
 - [Front-End (클라이언트)](client/README.md) : 홈페이지, 컨트롤, 데이터를 보기위한 UI/UX
-
-## 어려웠던 점 및 해결 방법  
-- **시리얼포트 초기화 오류**: `SerialPort is not a constructor` 문제 → `const { SerialPort } = require('serialport');` 로 수정  
-- **한국시간 처리 문제**: 서버에서 UTC 시간 저장 문제 → 한국시간 변환 함수 적용  
-- **더미 데이터 생성 문제**: 시리얼 연결 실패 시 15초마다 더미 생성하도록 개선  
-- **모듈 경로 문제**: `MODULE_NOT_FOUND` 오류 → 경로 수정 및 폴더 구조 정리
