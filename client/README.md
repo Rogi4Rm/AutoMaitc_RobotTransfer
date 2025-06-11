@@ -1,14 +1,14 @@
 # 🎨 RogiArm 프로젝트 - 프론트엔드
 
 ## 📦 사용 라이브러리
-- ⚛️ react@19.1.0  
-- ⚛️ react-dom@19.1.0  
-- 🌀 recoil  
-- 📝 react-hook-form  
-- 🔀 @hello-pangea/dnd  
-- 🧭 react-router-dom@7.5.3  
-- 📡 axios@1.9.0  
-- 🆔 uuid
+### ⚛️ ReactJS
+- react@19.1.0
+- react-dom@19.1.0
+- react-router-dom@7.5.3 - 페이지 라우팅
+- react-scripts@5.0.1 - CRA 기반 개발 도구
+
+### 📡 네트워크
+- axios@1.9.0 - HTTP 클라이언트
 
 ## ✨ 주요 기능
 - 🖼️ RogiArm의 UI/UX 구현  
