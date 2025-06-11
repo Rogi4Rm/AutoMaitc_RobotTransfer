@@ -1,9 +1,9 @@
 // React 및 훅 import
 import React, { useState, useEffect } from "react";
+import axios from '../api/axios'
 import "./Data.css";
 
 export default function RogiArmDashboard() {
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:4000";
   // 날짜 리스트 상태
   const [list, setList] = useState([]);
 
@@ -15,7 +15,7 @@ export default function RogiArmDashboard() {
 
   // 컴포넌트 마운트 시 날짜 리스트 불러오기
   useEffect(() => {
-    fetch(`${API_URL}/list`)
+    axios.get(`${API_URL}/list`)
       .then((res) => res.json())
       .then((data) => setList(data))
       .catch((err) => console.error("API 호출 실패:", err));
@@ -26,7 +26,7 @@ export default function RogiArmDashboard() {
     setSelectedDate(date);
 
     try {
-      const res = await fetch(`${API_URL}/stats/${date}`);
+      const res = await axios.get(`${API_URL}/stats/${date}`);
       const json = await res.json();
       setBoxCounts({
         red: json.red_boxes,
@@ -72,7 +72,7 @@ export default function RogiArmDashboard() {
             <h4>🎥 우노 동영상</h4>
             {selectedDate ? (
               <video
-                src={`${API_URL}/videos/${selectedDate}.mp4`}
+                src={`${process.env.REACT_APP_API_URL || "http://localhost:4000"}/videos/${selectedDate}.mp4`}
                 controls
                 width="100%"
               />

@@ -69,6 +69,6 @@ function startDummyData() {
     } catch (e) {
       console.error('더미 데이터 DB 저장 실패:', e.message);
     }
-  }, 60000); // 15초 간격
+  }, 60000); // 1분 간격
 }
 

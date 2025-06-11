@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axios from '../api/axios';
 import '../pages/Control.css';
 
 const Control = () => {
@@ -7,7 +7,7 @@ const Control = () => {
   const [radarData, setRadarData] = useState(null);
 
   // 로봇 제어 모드: AUTO or MANUAL
-  const [mode, setMode] = useState('MANUAL');
+  const [mode, setMode] = useState('AUTO');
 
   // 로봇팔 XYZ 좌표 상태
   const [position, setPosition] = useState({ x: 0, y: 0, z: 0 });
@@ -28,7 +28,7 @@ const Control = () => {
   useEffect(() => {
     const interval = setInterval(async () => {
       try {
-        const res = await axios.get('http://localhost:포트번호/radar');
+        const res = await axios.get(`${API_URL}/radar`);
         setRadarData(res.data.distance);
       } catch (err) {
         setRadarData(null);
