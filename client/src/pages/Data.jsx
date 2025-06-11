@@ -18,7 +18,7 @@ export default function RogiArmDashboard() {
     fetch(`${API_URL}/list`)
       .then((res) => res.json())
       .then((data) => setList(data));
-  }, []);
+  }, [API_URL]);
 
   // 날짜 클릭 시 해당 날짜의 박스 개수 데이터 가져오기
   const handleClick = async (date) => {
