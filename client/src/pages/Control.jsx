@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from '../api/axios';
+import axios, { API_URL } from '../api/axios';
 import '../pages/Control.css';
 
 const Control = () => {
