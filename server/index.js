@@ -16,7 +16,7 @@ const app = express();
 // CORS 미들웨어 적용
 const allowedOrigins = [
   "http://localhost:3000", // 개발용
-  "https://rogi4rm.netlify.app/", // Netlify 프론트엔드 주소
+  "https://rogi4rm.netlify.app", // Netlify 프론트엔드 주소
 ];
 
 app.use(cors({
