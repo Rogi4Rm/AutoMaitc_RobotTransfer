@@ -15,7 +15,7 @@ export default function RogiArmDashboard() {
 
   // 컴포넌트 마운트 시 날짜 리스트 불러오기
   useEffect(() => {
-    fetch("${API_URL}/list")
+    fetch(`${API_URL}/list`)
       .then((res) => res.json())
       .then((data) => setList(data));
   }, []);
