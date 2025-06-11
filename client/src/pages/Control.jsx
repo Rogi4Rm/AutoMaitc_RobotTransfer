@@ -102,7 +102,7 @@ const Control = () => {
         <div className="camera-box">
           <h2>📷 우노 카메라</h2>
           <img
-            src="http://localhost:/포트번호"
+            src={`${API_URL}/camera`}
             alt="카메라 영상"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
