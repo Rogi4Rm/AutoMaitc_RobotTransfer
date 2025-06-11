@@ -1,4 +1,4 @@
-# 🛠️ RogiArm 프로젝트 - Raspberry Pi
+# 🛠️ RogiARm 프로젝트 - Raspberry Pi
 전반적인 ROS 2 시스템 환경 구축
 
 ## 📦 사용 라이브러리
