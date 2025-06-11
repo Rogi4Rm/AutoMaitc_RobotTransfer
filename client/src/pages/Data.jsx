@@ -71,7 +71,7 @@ export default function RogiArmDashboard() {
             <h4>🎥 우노 동영상</h4>
             {selectedDate ? (
               <video
-                src={`${process.env.REACT_APP_API_URL || "http://localhost:4000"}/videos/${selectedDate}.mp4`}
+                src={`${API_URL}/videos/${selectedDate}.mp4`}
                 controls
                 width="100%"
               />
