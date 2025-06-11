@@ -14,7 +14,21 @@ require("./serial/serialListener");
 const app = express();
 
 // CORS 미들웨어 적용
-app.use(cors());
+const allowedOrigins = [
+  "http://localhost:3000", // 개발용
+  "https://rogi-a-rm.vercel.app", // Vercel 프론트엔드 주소
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // 서버에서 요청 origin이 없을 수도 있으므로 null도 허용
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+}));
 
 // JSON 요청 본문 파싱 미들웨어 적용
 app.use(express.json());
