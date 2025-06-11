@@ -1,6 +1,6 @@
 // React 및 훅 import
 import React, { useState, useEffect } from "react";
-import axios from '../api/axios'
+import axios, { API_URL } from '../api/axios';
 import "./Data.css";
 
 export default function RogiArmDashboard() {
