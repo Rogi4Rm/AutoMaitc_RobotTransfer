@@ -19,7 +19,7 @@ export default function RogiArmDashboard() {
       .then((res) => res.json())
       .then((data) => setList(data))
       .catch((err) => console.error("API 호출 실패:", err));
-  }, [API_URL]);
+  }, []);
 
   // 날짜 클릭 시 해당 날짜의 박스 개수 데이터 가져오기
   const handleClick = async (date) => {
