@@ -15,7 +15,7 @@ export default function RogiArmDashboard() {
 
   // 컴포넌트 마운트 시 날짜 리스트 불러오기
   useEffect(() => {
-    axios.get(`${API_URL}/list`)
+    axios.get(`/list`)
       .then((res) => res.json())
       .then((data) => setList(data))
       .catch((err) => console.error("API 호출 실패:", err));
@@ -26,7 +26,7 @@ export default function RogiArmDashboard() {
     setSelectedDate(date);
 
     try {
-      const res = await axios.get(`${API_URL}/stats/${date}`);
+      const res = await axios.get(`/stats/${date}`);
       const json = await res.json();
       setBoxCounts({
         red: json.red_boxes,
