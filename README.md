@@ -7,7 +7,7 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 ## 👥 작업자
 - 🧑‍💼 **팀장 [김승훈](https://github.com/SIya45)** : ROS, Arduino
 - 🧪 **[고동휘](https://github.com/Taehavobka)** : 센서 (이미지 러닝)
-- 💻 **[엄인호](https://github.com/djsy01/)** : Front-End, Back-End, SQLite3(DB)
+- 💻 **[엄인호](https://github.com/djsy01/)** : Full-Stack
 - 🧪 **[이두혁](https://github.com/MarvHara)** : 센서 (이미지 러닝)
 
 ## 🛠️ 사용 기술  

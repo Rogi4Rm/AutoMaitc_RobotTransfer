@@ -42,13 +42,19 @@ parser.on('data', async (line) => {
 
 // 더미 데이터를 15초마다 생성하여 DB에 저장하는 함수
 function startDummyData() {
-  setInterval(async () => {
+  let dummyCount = 0; // 생성된 더미 데이터 개수
+
+  const intervalId = setInterval(async () => {
+    if (dummyCount >= 10) {
+      console.log('더미 데이터 10개 생성 완료. 생성 중지.');
+      clearInterval(intervalId); // 10개 초과 시 반복 종료
+      return;
+    }
+
     const now = new Date();
-    // 한국 표준시(KST) 기준 현재 시간 계산
     const kstNow = new Date(now.getTime() + 9 * 60 * 60 * 1000);
     const dateTime = kstNow.toISOString().slice(0, 19).replace('T', ' ');
 
-    // 랜덤 박스 개수 포함 더미 데이터 객체 생성
     const dummyData = {
       date: `dummy-${dateTime}`,
       red: Math.floor(Math.random() * 10),
@@ -57,11 +63,12 @@ function startDummyData() {
     };
 
     try {
-      // 더미 데이터를 DB에 저장
       await insertStats(dummyData);
-      console.log('더미 데이터 DB 저장 완료:', dummyData);
+      console.log(`(${dummyCount + 1}/10) 더미 데이터 DB 저장 완료:`, dummyData);
+      dummyCount++;
     } catch (e) {
       console.error('더미 데이터 DB 저장 실패:', e.message);
     }
-  }, 15000); // 15초 간격 실행
+  }, 15000); // 15초 간격
 }
+
