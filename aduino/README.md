@@ -1,4 +1,4 @@
-# 🛠️ RogiArm 프로젝트 - Raspberry Pi
+# 🛠️ RogiArm 프로젝트 - Aduino
 
 ## 📦 사용 라이브러리
 

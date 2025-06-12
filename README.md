@@ -13,6 +13,6 @@ RogiArm은 아두이노와 시리얼 통신을 활용해 로봇팔 데이터를 
 ## 📁 각 구성별 README
 - 🖥️ [Back-End (서버)](/server/README.md) : Node.js 기반 Sqlite3 DB관리
 - 🧩 [Front-End (클라이언트)](/client/README.md) : 홈페이지, 컨트롤, 데이터를 보기위한 UI/UX
-- 🔧 [Arduino](/aduino/README.md)
-- 🍓 [Raspberry Pi](/raspberryPi/README.md)
+- 🔧 [Arduino](/aduino/README.md) : 자율주행
+- 🍓 [Raspberry Pi](/raspberryPi/README.md) : 로봇팔
 - 📝 [README 작성 가이드](/README-template-guide.md) : README 작성 가이드
