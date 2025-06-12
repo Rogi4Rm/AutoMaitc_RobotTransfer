@@ -1,0 +1,491 @@
+[0.721s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.722s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb052bda0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb0fc0650>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb0fc0650>>)
+[0.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.913s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extensions ['ignore', 'ignore_ament_install']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extension 'ignore'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extension 'ignore_ament_install'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extensions ['colcon_pkg']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extension 'colcon_pkg'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extensions ['colcon_meta']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extension 'colcon_meta'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extensions ['ros']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extension 'ros'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extensions ['cmake', 'python']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extension 'cmake'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extension 'python'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extensions ['python_setup_py']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg) by extension 'python_setup_py'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extensions ['ignore', 'ignore_ament_install']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extension 'ignore'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extension 'ignore_ament_install'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extensions ['colcon_pkg']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extension 'colcon_pkg'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extensions ['colcon_meta']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extension 'colcon_meta'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extensions ['ros']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extension 'ros'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extensions ['cmake', 'python']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extension 'cmake'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extension 'python'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extensions ['python_setup_py']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG) by extension 'python_setup_py'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extensions ['ignore', 'ignore_ament_install']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extension 'ignore'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extension 'ignore_ament_install'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extensions ['colcon_pkg']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extension 'colcon_pkg'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extensions ['colcon_meta']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extension 'colcon_meta'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extensions ['ros']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extension 'ros'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extensions ['cmake', 'python']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extension 'cmake'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extension 'python'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extensions ['python_setup_py']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/CFG/cgi) by extension 'python_setup_py'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extensions ['ignore', 'ignore_ament_install']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extension 'ignore'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extension 'ignore_ament_install'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extensions ['colcon_pkg']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extension 'colcon_pkg'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extensions ['colcon_meta']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extension 'colcon_meta'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extensions ['ros']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extension 'ros'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extensions ['cmake', 'python']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extension 'cmake'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extension 'python'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extensions ['python_setup_py']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC) by extension 'python_setup_py'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extensions ['ignore', 'ignore_ament_install']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extension 'ignore'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extension 'ignore_ament_install'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extensions ['colcon_pkg']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extension 'colcon_pkg'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extensions ['colcon_meta']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extension 'colcon_meta'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extensions ['ros']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extension 'ros'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extensions ['cmake', 'python']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extension 'cmake'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extension 'python'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extensions ['python_setup_py']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML) by extension 'python_setup_py'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extensions ['ignore', 'ignore_ament_install']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extension 'ignore'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extension 'ignore_ament_install'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extensions ['colcon_pkg']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extension 'colcon_pkg'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extensions ['colcon_meta']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extension 'colcon_meta'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extensions ['ros']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extension 'ros'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extensions ['cmake', 'python']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extension 'cmake'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extension 'python'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extensions ['python_setup_py']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES) by extension 'python_setup_py'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extensions ['ignore', 'ignore_ament_install']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extension 'ignore'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extension 'ignore_ament_install'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extensions ['colcon_pkg']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extension 'colcon_pkg'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extensions ['colcon_meta']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extension 'colcon_meta'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extensions ['ros']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extension 'ros'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extensions ['cmake', 'python']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extension 'cmake'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extension 'python'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extensions ['python_setup_py']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/lgpio) by extension 'python_setup_py'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extensions ['ignore', 'ignore_ament_install']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extension 'ignore'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extension 'ignore_ament_install'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extensions ['colcon_pkg']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extension 'colcon_pkg'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extensions ['colcon_meta']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extension 'colcon_meta'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extensions ['ros']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extension 'ros'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extensions ['cmake', 'python']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extension 'cmake'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extension 'python'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extensions ['python_setup_py']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_lgpio) by extension 'python_setup_py'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extensions ['ignore', 'ignore_ament_install']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extension 'ignore'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extension 'ignore_ament_install'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extensions ['colcon_pkg']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extension 'colcon_pkg'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extensions ['colcon_meta']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extension 'colcon_meta'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extensions ['ros']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extension 'ros'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extensions ['cmake', 'python']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extension 'cmake'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extension 'python'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extensions ['python_setup_py']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/py_rgpio) by extension 'python_setup_py'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extensions ['ignore', 'ignore_ament_install']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extension 'ignore'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extension 'ignore_ament_install'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extensions ['colcon_pkg']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extension 'colcon_pkg'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extensions ['colcon_meta']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extension 'colcon_meta'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extensions ['ros']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extension 'ros'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extensions ['cmake', 'python']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extension 'cmake'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extension 'python'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extensions ['python_setup_py']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgpio) by extension 'python_setup_py'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extensions ['ignore', 'ignore_ament_install']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extension 'ignore'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extension 'ignore_ament_install'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extensions ['colcon_pkg']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extension 'colcon_pkg'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extensions ['colcon_meta']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extension 'colcon_meta'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extensions ['ros']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extension 'ros'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extensions ['cmake', 'python']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extension 'cmake'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extension 'python'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extensions ['python_setup_py']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/EXAMPLES/rgs) by extension 'python_setup_py'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extensions ['ignore', 'ignore_ament_install']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extension 'ignore'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extension 'ignore_ament_install'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extensions ['colcon_pkg']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extension 'colcon_pkg'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extensions ['colcon_meta']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extension 'colcon_meta'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extensions ['ros']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extension 'ros'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extensions ['cmake', 'python']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extension 'cmake'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extension 'python'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extensions ['python_setup_py']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/images) by extension 'python_setup_py'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extension 'ignore'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extension 'ignore_ament_install'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extensions ['colcon_pkg']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extension 'colcon_pkg'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extensions ['colcon_meta']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extension 'colcon_meta'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extensions ['ros']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extension 'ros'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extensions ['cmake', 'python']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extension 'cmake'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extension 'python'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extensions ['python_setup_py']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/HTML/scripts) by extension 'python_setup_py'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extensions ['ignore', 'ignore_ament_install']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extension 'ignore'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extension 'ignore_ament_install'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extensions ['colcon_pkg']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extension 'colcon_pkg'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extensions ['colcon_meta']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extension 'colcon_meta'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extensions ['ros']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extension 'ros'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extensions ['cmake', 'python']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extension 'cmake'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extension 'python'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extensions ['python_setup_py']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/MAN) by extension 'python_setup_py'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extensions ['ignore', 'ignore_ament_install']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extension 'ignore'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extension 'ignore_ament_install'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extensions ['colcon_pkg']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extension 'colcon_pkg'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extensions ['colcon_meta']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extension 'colcon_meta'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extensions ['ros']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extension 'ros'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extensions ['cmake', 'python']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extension 'cmake'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extension 'python'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extensions ['python_setup_py']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/bin) by extension 'python_setup_py'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extensions ['ignore', 'ignore_ament_install']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extension 'ignore'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extension 'ignore_ament_install'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extensions ['colcon_pkg']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extension 'colcon_pkg'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extensions ['colcon_meta']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extension 'colcon_meta'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extensions ['ros']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extension 'ros'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extensions ['cmake', 'python']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extension 'cmake'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extension 'python'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extensions ['python_setup_py']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/dbase) by extension 'python_setup_py'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extensions ['ignore', 'ignore_ament_install']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extension 'ignore'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extension 'ignore_ament_install'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extensions ['colcon_pkg']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extension 'colcon_pkg'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extensions ['colcon_meta']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extension 'colcon_meta'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extensions ['ros']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extension 'ros'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extensions ['cmake', 'python']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extension 'cmake'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extension 'python'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extensions ['python_setup_py']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src) by extension 'python_setup_py'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extensions ['ignore', 'ignore_ament_install']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extension 'ignore'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extension 'ignore_ament_install'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extensions ['colcon_pkg']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extension 'colcon_pkg'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extensions ['colcon_meta']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extension 'colcon_meta'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extensions ['ros']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extension 'ros'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extensions ['cmake', 'python']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extension 'cmake'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extension 'python'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extensions ['python_setup_py']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(lg/DOC/src/defs) by extension 'python_setup_py'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extensions ['ignore', 'ignore_ament_install']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extension 'ignore'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extension 'ignore_ament_install'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extensions ['colcon_pkg']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extension 'colcon_pkg'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extensions ['colcon_meta']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extension 'colcon_meta'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extensions ['ros']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extension 'ros'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extensions ['cmake', 'python']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extension 'cmake'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extension 'python'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extensions ['python_setup_py']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_LGPIO) by extension 'python_setup_py'
+[1.305s] DEBUG:colcon.colcon_core.package_identification:Package 'lg/PY_LGPIO' with type 'python' and name 'lgpio'
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extensions ['ignore', 'ignore_ament_install']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extension 'ignore'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extension 'ignore_ament_install'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extensions ['colcon_pkg']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extension 'colcon_pkg'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extensions ['colcon_meta']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extension 'colcon_meta'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extensions ['ros']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extension 'ros'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extensions ['cmake', 'python']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extension 'cmake'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extension 'python'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extensions ['python_setup_py']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(lg/PY_RGPIO) by extension 'python_setup_py'
+[1.600s] DEBUG:colcon.colcon_core.package_identification:Package 'lg/PY_RGPIO' with type 'python' and name 'rgpio'
+[1.600s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extensions ['ignore', 'ignore_ament_install']
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'ignore'
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'ignore_ament_install'
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extensions ['colcon_pkg']
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'colcon_pkg'
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extensions ['colcon_meta']
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'colcon_meta'
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extensions ['ros']
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'ros'
+[1.609s] DEBUG:colcon.colcon_core.package_identification:Package 'src/RogiARm_control' with type 'ros.ament_python' and name 'RogiARm_control'
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'ignore'
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'ignore_ament_install'
+[1.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extensions ['colcon_pkg']
+[1.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'colcon_pkg'
+[1.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extensions ['colcon_meta']
+[1.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'colcon_meta'
+[1.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extensions ['ros']
+[1.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'ros'
+[1.614s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rogiarm_bringup' with type 'ros.ament_python' and name 'rogiarm_bringup'
+[1.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extensions ['ignore', 'ignore_ament_install']
+[1.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'ignore'
+[1.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'ignore_ament_install'
+[1.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extensions ['colcon_pkg']
+[1.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'colcon_pkg'
+[1.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extensions ['colcon_meta']
+[1.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'colcon_meta'
+[1.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extensions ['ros']
+[1.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'ros'
+[1.616s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rogiarm_description' with type 'ros.ament_python' and name 'rogiarm_description'
+[1.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'ignore'
+[1.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'ignore_ament_install'
+[1.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extensions ['colcon_pkg']
+[1.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'colcon_pkg'
+[1.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extensions ['colcon_meta']
+[1.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'colcon_meta'
+[1.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extensions ['ros']
+[1.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'ros'
+[1.618s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rogiarm_hardware_driver' with type 'ros.ament_python' and name 'rogiarm_hardware_driver'
+[1.618s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.618s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.618s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.619s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.619s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.683s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 193 installed packages in /opt/ros/jazzy
+[1.684s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.728s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_args' from command line to 'None'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_target' from command line to 'None'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_clean_cache' from command line to 'False'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_clean_first' from command line to 'False'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_force_configure' from command line to 'False'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'ament_cmake_args' from command line to 'None'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'catkin_cmake_args' from command line to 'None'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.729s] DEBUG:colcon.colcon_core.verb:Building package 'RogiARm_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/RogiARm_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/RogiARm_control', 'merge_install': False, 'path': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/RogiARm_control', 'symlink_install': False, 'test_result_base': None}
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'lgpio' build argument 'cmake_args' from command line to 'None'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'lgpio' build argument 'cmake_target' from command line to 'None'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'lgpio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'lgpio' build argument 'cmake_clean_cache' from command line to 'False'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'lgpio' build argument 'cmake_clean_first' from command line to 'False'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'lgpio' build argument 'cmake_force_configure' from command line to 'False'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'lgpio' build argument 'ament_cmake_args' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'lgpio' build argument 'catkin_cmake_args' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'lgpio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.730s] DEBUG:colcon.colcon_core.verb:Building package 'lgpio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/lgpio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/lgpio', 'merge_install': False, 'path': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/lg/PY_LGPIO', 'symlink_install': False, 'test_result_base': None}
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rgpio' build argument 'cmake_args' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rgpio' build argument 'cmake_target' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rgpio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rgpio' build argument 'cmake_clean_cache' from command line to 'False'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rgpio' build argument 'cmake_clean_first' from command line to 'False'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rgpio' build argument 'cmake_force_configure' from command line to 'False'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rgpio' build argument 'ament_cmake_args' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rgpio' build argument 'catkin_cmake_args' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rgpio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.730s] DEBUG:colcon.colcon_core.verb:Building package 'rgpio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rgpio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rgpio', 'merge_install': False, 'path': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/lg/PY_RGPIO', 'symlink_install': False, 'test_result_base': None}
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_args' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_target' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.731s] DEBUG:colcon.colcon_core.verb:Building package 'rogiarm_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rogiarm_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rogiarm_bringup', 'merge_install': False, 'path': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/rogiarm_bringup', 'symlink_install': False, 'test_result_base': None}
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_args' from command line to 'None'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_target' from command line to 'None'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.731s] DEBUG:colcon.colcon_core.verb:Building package 'rogiarm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rogiarm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rogiarm_description', 'merge_install': False, 'path': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/rogiarm_description', 'symlink_install': False, 'test_result_base': None}
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_args' from command line to 'None'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_target' from command line to 'None'
+[1.731s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.732s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.732s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.732s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.732s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.732s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.732s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.732s] DEBUG:colcon.colcon_core.verb:Building package 'rogiarm_hardware_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rogiarm_hardware_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rogiarm_hardware_driver', 'merge_install': False, 'path': '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/rogiarm_hardware_driver', 'symlink_install': False, 'test_result_base': None}
+[1.732s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.733s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.734s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/RogiARm_control' with build type 'ament_python'
+[1.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('RogiARm_control', 'ament_prefix_path')
+[1.752s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/hook/ament_prefix_path.ps1'
+[1.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/hook/ament_prefix_path.dsv'
+[1.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/hook/ament_prefix_path.sh'
+[1.763s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.763s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.770s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/lg/PY_LGPIO'
+[1.771s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.771s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.775s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/lg/PY_RGPIO'
+[1.776s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.776s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.780s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/rogiarm_bringup' with build type 'ament_python'
+[1.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('rogiarm_bringup', 'ament_prefix_path')
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/hook/ament_prefix_path.ps1'
+[1.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/hook/ament_prefix_path.dsv'
+[1.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/hook/ament_prefix_path.sh'
+[1.786s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.786s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.129s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/RogiARm_control'
+[2.129s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.129s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.189s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/rogiarm_bringup'
+[3.190s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.846s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/lg/PY_RGPIO': PYTHONPATH=/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rgpio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rgpio build --build-base /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rgpio/build install --record /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rgpio/install.log --single-version-externally-managed
+[4.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/RogiARm_control': PYTHONPATH=/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/RogiARm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RogiARm_control build --build-base /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/RogiARm_control/build install --record /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/RogiARm_control/install.log --single-version-externally-managed install_data
+[4.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/lg/PY_LGPIO': PYTHONPATH=/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/lgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/lgpio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lgpio build --build-base /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/lgpio/build install --record /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/lgpio/install.log --single-version-externally-managed
+[4.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/src/rogiarm_bringup': PYTHONPATH=/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rogiarm_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_bringup build --build-base /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rogiarm_bringup/build install --record /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rogiarm_bringup/install.log --single-version-externally-managed install_data
+[5.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/lg/PY_LGPIO' returned '1': PYTHONPATH=/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/lgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/lgpio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lgpio build --build-base /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/lgpio/build install --record /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/lgpio/install.log --single-version-externally-managed
+[6.012s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.014s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.014s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[6.014s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.028s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.028s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.028s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.029s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.056s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[6.056s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.057s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/local_setup.ps1'
+[6.059s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/_local_setup_util_ps1.py'
+[6.064s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/setup.ps1'
+[6.069s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/local_setup.sh'
+[6.073s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/_local_setup_util_sh.py'
+[6.075s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/setup.sh'
+[6.079s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/local_setup.bash'
+[6.084s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/setup.bash'
+[6.087s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/local_setup.zsh'
+[6.092s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/setup.zsh'

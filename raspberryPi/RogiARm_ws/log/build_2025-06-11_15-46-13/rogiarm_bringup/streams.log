@@ -1,0 +1,34 @@
+[2.206s] Invoking command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_bringup': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_bringup build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/install.log --single-version-externally-managed install_data
+[2.668s] running egg_info
+[2.669s] creating ../../build/rogiarm_bringup/rogiarm_bringup.egg-info
+[2.689s] writing ../../build/rogiarm_bringup/rogiarm_bringup.egg-info/PKG-INFO
+[2.689s] writing dependency_links to ../../build/rogiarm_bringup/rogiarm_bringup.egg-info/dependency_links.txt
+[2.690s] writing requirements to ../../build/rogiarm_bringup/rogiarm_bringup.egg-info/requires.txt
+[2.690s] writing top-level names to ../../build/rogiarm_bringup/rogiarm_bringup.egg-info/top_level.txt
+[2.693s] writing manifest file '../../build/rogiarm_bringup/rogiarm_bringup.egg-info/SOURCES.txt'
+[2.737s] reading manifest file '../../build/rogiarm_bringup/rogiarm_bringup.egg-info/SOURCES.txt'
+[2.739s] writing manifest file '../../build/rogiarm_bringup/rogiarm_bringup.egg-info/SOURCES.txt'
+[2.739s] running build
+[2.739s] running build_py
+[2.739s] creating /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build
+[2.739s] creating /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build/lib
+[2.739s] creating /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build/lib/rogiarm_bringup
+[2.740s] copying rogiarm_bringup/__init__.py -> /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build/lib/rogiarm_bringup
+[2.740s] running install
+[2.751s] running install_lib
+[2.777s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages/rogiarm_bringup
+[2.777s] copying /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build/lib/rogiarm_bringup/__init__.py -> /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages/rogiarm_bringup
+[2.777s] byte-compiling /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages/rogiarm_bringup/__init__.py to __init__.cpython-312.pyc
+[2.777s] running install_data
+[2.777s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/ament_index
+[2.778s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/ament_index/resource_index
+[2.780s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/ament_index/resource_index/packages
+[2.781s] copying resource/rogiarm_bringup -> /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/ament_index/resource_index/packages
+[2.781s] copying package.xml -> /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup
+[2.781s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/launch
+[2.781s] copying launch/bringup.launch.py -> /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/launch
+[2.781s] running install_egg_info
+[2.804s] Copying ../../build/rogiarm_bringup/rogiarm_bringup.egg-info to /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages/rogiarm_bringup-0.0.0-py3.12.egg-info
+[2.807s] running install_scripts
+[2.980s] writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/install.log'
+[3.182s] Invoked command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_bringup' returned '0': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_bringup build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/install.log --single-version-externally-managed install_data

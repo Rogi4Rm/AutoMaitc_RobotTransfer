@@ -1,0 +1,24 @@
+[1.046s] Invoking command in '/home/rogi4rm/RogiARm_ws/src/RogiARm_control': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/RogiARm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RogiARm_control build --build-base /home/rogi4rm/RogiARm_ws/build/RogiARm_control/build install --record /home/rogi4rm/RogiARm_ws/build/RogiARm_control/install.log --single-version-externally-managed install_data
+[1.349s] running egg_info
+[1.367s] writing ../../build/RogiARm_control/RogiARm_control.egg-info/PKG-INFO
+[1.368s] writing dependency_links to ../../build/RogiARm_control/RogiARm_control.egg-info/dependency_links.txt
+[1.370s] writing entry points to ../../build/RogiARm_control/RogiARm_control.egg-info/entry_points.txt
+[1.372s] writing requirements to ../../build/RogiARm_control/RogiARm_control.egg-info/requires.txt
+[1.374s] writing top-level names to ../../build/RogiARm_control/RogiARm_control.egg-info/top_level.txt
+[1.417s] reading manifest file '../../build/RogiARm_control/RogiARm_control.egg-info/SOURCES.txt'
+[1.418s] writing manifest file '../../build/RogiARm_control/RogiARm_control.egg-info/SOURCES.txt'
+[1.418s] running build
+[1.418s] running build_py
+[1.418s] copying RogiARm_control/keyboard_control_node.py -> /home/rogi4rm/RogiARm_ws/build/RogiARm_control/build/lib/RogiARm_control
+[1.419s] running install
+[1.428s] running install_lib
+[1.447s] copying /home/rogi4rm/RogiARm_ws/build/RogiARm_control/build/lib/RogiARm_control/keyboard_control_node.py -> /home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages/RogiARm_control
+[1.448s] byte-compiling /home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages/RogiARm_control/keyboard_control_node.py to keyboard_control_node.cpython-312.pyc
+[1.449s] running install_data
+[1.449s] running install_egg_info
+[1.470s] removing '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages/RogiARm_control-0.0.0-py3.12.egg-info' (and everything under it)
+[1.470s] Copying ../../build/RogiARm_control/RogiARm_control.egg-info to /home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages/RogiARm_control-0.0.0-py3.12.egg-info
+[1.471s] running install_scripts
+[1.611s] Installing keyboard_control_node script to /home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/RogiARm_control
+[1.612s] writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/RogiARm_control/install.log'
+[1.692s] Invoked command in '/home/rogi4rm/RogiARm_ws/src/RogiARm_control' returned '0': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/RogiARm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RogiARm_control build --build-base /home/rogi4rm/RogiARm_ws/build/RogiARm_control/build install --record /home/rogi4rm/RogiARm_ws/build/RogiARm_control/install.log --single-version-externally-managed install_data

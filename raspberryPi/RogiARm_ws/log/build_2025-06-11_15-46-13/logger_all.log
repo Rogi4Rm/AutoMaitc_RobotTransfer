@@ -1,0 +1,278 @@
+[0.129s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.130s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff7fac83b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff7fc74b00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff7fc74b00>>)
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.185s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rogi4rm/RogiARm_ws'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/RogiARm_control) by extension 'ros'
+[0.229s] DEBUG:colcon.colcon_core.package_identification:Package 'src/RogiARm_control' with type 'ros.ament_python' and name 'RogiARm_control'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_bringup) by extension 'ros'
+[0.231s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rogiarm_bringup' with type 'ros.ament_python' and name 'rogiarm_bringup'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_description) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rogiarm_description' with type 'ros.ament_python' and name 'rogiarm_description'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rogiarm_hardware_driver) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rogiarm_hardware_driver' with type 'ros.ament_python' and name 'rogiarm_hardware_driver'
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.257s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.257s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.260s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 193 installed packages in /opt/ros/jazzy
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_target' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'RogiARm_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.298s] DEBUG:colcon.colcon_core.verb:Building package 'RogiARm_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/RogiARm_ws/build/RogiARm_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/RogiARm_ws/install/RogiARm_control', 'merge_install': False, 'path': '/home/rogi4rm/RogiARm_ws/src/RogiARm_control', 'symlink_install': False, 'test_result_base': None}
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_target' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.299s] DEBUG:colcon.colcon_core.verb:Building package 'rogiarm_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/RogiARm_ws/build/rogiarm_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup', 'merge_install': False, 'path': '/home/rogi4rm/RogiARm_ws/src/rogiarm_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_target' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.300s] DEBUG:colcon.colcon_core.verb:Building package 'rogiarm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/RogiARm_ws/build/rogiarm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/RogiARm_ws/install/rogiarm_description', 'merge_install': False, 'path': '/home/rogi4rm/RogiARm_ws/src/rogiarm_description', 'symlink_install': False, 'test_result_base': None}
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_target' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'rogiarm_hardware_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.300s] DEBUG:colcon.colcon_core.verb:Building package 'rogiarm_hardware_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver', 'merge_install': False, 'path': '/home/rogi4rm/RogiARm_ws/src/rogiarm_hardware_driver', 'symlink_install': False, 'test_result_base': None}
+[0.300s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.302s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.302s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rogi4rm/RogiARm_ws/src/RogiARm_control' with build type 'ament_python'
+[0.302s] Level 1:colcon.colcon_core.shell:create_environment_hook('RogiARm_control', 'ament_prefix_path')
+[0.304s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/hook/ament_prefix_path.ps1'
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/hook/ament_prefix_path.dsv'
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/hook/ament_prefix_path.sh'
+[0.307s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.307s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.310s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rogi4rm/RogiARm_ws/src/rogiarm_bringup' with build type 'ament_python'
+[0.310s] Level 1:colcon.colcon_core.shell:create_environment_hook('rogiarm_bringup', 'ament_prefix_path')
+[0.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/hook/ament_prefix_path.ps1'
+[0.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/hook/ament_prefix_path.dsv'
+[0.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/hook/ament_prefix_path.sh'
+[0.313s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.313s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.316s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rogi4rm/RogiARm_ws/src/rogiarm_description' with build type 'ament_python'
+[0.316s] Level 1:colcon.colcon_core.shell:create_environment_hook('rogiarm_description', 'ament_prefix_path')
+[0.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/hook/ament_prefix_path.ps1'
+[0.318s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/hook/ament_prefix_path.dsv'
+[0.318s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/hook/ament_prefix_path.sh'
+[0.319s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.319s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.322s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rogi4rm/RogiARm_ws/src/rogiarm_hardware_driver' with build type 'ament_python'
+[0.322s] Level 1:colcon.colcon_core.shell:create_environment_hook('rogiarm_hardware_driver', 'ament_prefix_path')
+[0.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/hook/ament_prefix_path.ps1'
+[0.324s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/hook/ament_prefix_path.dsv'
+[0.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/hook/ament_prefix_path.sh'
+[0.325s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.325s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.614s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rogi4rm/RogiARm_ws/src/RogiARm_control'
+[0.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.901s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rogi4rm/RogiARm_ws/src/rogiarm_bringup'
+[0.901s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.901s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.192s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rogi4rm/RogiARm_ws/src/rogiarm_description'
+[1.192s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.192s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.473s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rogi4rm/RogiARm_ws/src/rogiarm_hardware_driver'
+[1.474s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.474s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_bringup': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_bringup build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/install.log --single-version-externally-managed install_data
+[2.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rogi4rm/RogiARm_ws/src/RogiARm_control': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/RogiARm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RogiARm_control build --build-base /home/rogi4rm/RogiARm_ws/build/RogiARm_control/build install --record /home/rogi4rm/RogiARm_ws/build/RogiARm_control/install.log --single-version-externally-managed install_data
+[2.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_hardware_driver': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_hardware_driver build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/install.log --single-version-externally-managed install_data
+[2.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_description': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_description build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_description/install.log --single-version-externally-managed install_data
+[3.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_bringup' returned '0': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_bringup build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/install.log --single-version-externally-managed install_data
+[3.501s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup' for CMake module files
+[3.502s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup' for CMake config files
+[3.504s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib'
+[3.505s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/bin'
+[3.505s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/pkgconfig/rogiarm_bringup.pc'
+[3.506s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages'
+[3.506s] Level 1:colcon.colcon_core.shell:create_environment_hook('rogiarm_bringup', 'pythonpath')
+[3.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/hook/pythonpath.ps1'
+[3.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/hook/pythonpath.dsv'
+[3.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/hook/pythonpath.sh'
+[3.513s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/bin'
+[3.513s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rogiarm_bringup)
+[3.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/package.ps1'
+[3.517s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/package.dsv'
+[3.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/package.sh'
+[3.523s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/package.bash'
+[3.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/rogiarm_bringup/package.zsh'
+[3.526s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/share/colcon-core/packages/rogiarm_bringup)
+[3.530s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_description' for CMake module files
+[3.532s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_description' for CMake config files
+[3.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_description' returned '0': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_description build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_description/install.log --single-version-externally-managed install_data
+[3.534s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib'
+[3.535s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/bin'
+[3.535s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/pkgconfig/rogiarm_description.pc'
+[3.536s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages'
+[3.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('rogiarm_description', 'pythonpath')
+[3.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/hook/pythonpath.ps1'
+[3.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/hook/pythonpath.dsv'
+[3.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/hook/pythonpath.sh'
+[3.541s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/bin'
+[3.541s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rogiarm_description)
+[3.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/package.ps1'
+[3.543s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/package.dsv'
+[3.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/package.sh'
+[3.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/package.bash'
+[3.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/package.zsh'
+[3.546s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/colcon-core/packages/rogiarm_description)
+[3.549s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/RogiARm_control' for CMake module files
+[3.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rogi4rm/RogiARm_ws/src/RogiARm_control' returned '0': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/RogiARm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RogiARm_control build --build-base /home/rogi4rm/RogiARm_ws/build/RogiARm_control/build install --record /home/rogi4rm/RogiARm_ws/build/RogiARm_control/install.log --single-version-externally-managed install_data
+[3.551s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/RogiARm_control' for CMake config files
+[3.551s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib'
+[3.552s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/bin'
+[3.552s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/pkgconfig/RogiARm_control.pc'
+[3.552s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages'
+[3.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('RogiARm_control', 'pythonpath')
+[3.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/hook/pythonpath.ps1'
+[3.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/hook/pythonpath.dsv'
+[3.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/hook/pythonpath.sh'
+[3.555s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/bin'
+[3.555s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(RogiARm_control)
+[3.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/package.ps1'
+[3.556s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/package.dsv'
+[3.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/package.sh'
+[3.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/package.bash'
+[3.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/RogiARm_control/package.zsh'
+[3.558s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rogi4rm/RogiARm_ws/install/RogiARm_control/share/colcon-core/packages/RogiARm_control)
+[3.569s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver' for CMake module files
+[3.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_hardware_driver' returned '0': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_hardware_driver build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/install.log --single-version-externally-managed install_data
+[3.570s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver' for CMake config files
+[3.570s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib'
+[3.570s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/bin'
+[3.570s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/pkgconfig/rogiarm_hardware_driver.pc'
+[3.571s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages'
+[3.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('rogiarm_hardware_driver', 'pythonpath')
+[3.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/hook/pythonpath.ps1'
+[3.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/hook/pythonpath.dsv'
+[3.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/hook/pythonpath.sh'
+[3.573s] Level 1:colcon.colcon_core.environment:checking '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/bin'
+[3.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rogiarm_hardware_driver)
+[3.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/package.ps1'
+[3.573s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/package.dsv'
+[3.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/package.sh'
+[3.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/package.bash'
+[3.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver/package.zsh'
+[3.575s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/colcon-core/packages/rogiarm_hardware_driver)
+[3.576s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.576s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.576s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.576s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.584s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.584s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.585s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.585s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.586s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[3.586s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.586s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rogi4rm/RogiARm_ws/install/local_setup.ps1'
+[3.587s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rogi4rm/RogiARm_ws/install/_local_setup_util_ps1.py'
+[3.589s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rogi4rm/RogiARm_ws/install/setup.ps1'
+[3.590s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rogi4rm/RogiARm_ws/install/local_setup.sh'
+[3.591s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rogi4rm/RogiARm_ws/install/_local_setup_util_sh.py'
+[3.591s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rogi4rm/RogiARm_ws/install/setup.sh'
+[3.593s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rogi4rm/RogiARm_ws/install/local_setup.bash'
+[3.593s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rogi4rm/RogiARm_ws/install/setup.bash'
+[3.594s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rogi4rm/RogiARm_ws/install/local_setup.zsh'
+[3.595s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rogi4rm/RogiARm_ws/install/setup.zsh'

@@ -1,0 +1,20 @@
+[2.998s] Invoking command in '/home/rogi4rm/RogiARm_ws/src/RogiARm_control': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/RogiARm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RogiARm_control build --build-base /home/rogi4rm/RogiARm_ws/build/RogiARm_control/build install --record /home/rogi4rm/RogiARm_ws/build/RogiARm_control/install.log --single-version-externally-managed install_data
+[3.522s] running egg_info
+[3.548s] writing ../../build/RogiARm_control/RogiARm_control.egg-info/PKG-INFO
+[3.550s] writing dependency_links to ../../build/RogiARm_control/RogiARm_control.egg-info/dependency_links.txt
+[3.550s] writing entry points to ../../build/RogiARm_control/RogiARm_control.egg-info/entry_points.txt
+[3.550s] writing requirements to ../../build/RogiARm_control/RogiARm_control.egg-info/requires.txt
+[3.550s] writing top-level names to ../../build/RogiARm_control/RogiARm_control.egg-info/top_level.txt
+[3.598s] reading manifest file '../../build/RogiARm_control/RogiARm_control.egg-info/SOURCES.txt'
+[3.602s] writing manifest file '../../build/RogiARm_control/RogiARm_control.egg-info/SOURCES.txt'
+[3.602s] running build
+[3.602s] running build_py
+[3.603s] running install
+[3.620s] running install_lib
+[3.659s] running install_data
+[3.660s] running install_egg_info
+[3.695s] removing '/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages/RogiARm_control-0.0.0-py3.12.egg-info' (and everything under it)
+[3.695s] Copying ../../build/RogiARm_control/RogiARm_control.egg-info to /home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages/RogiARm_control-0.0.0-py3.12.egg-info
+[3.699s] running install_scripts
+[3.893s] Installing keyboard_control_node script to /home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/RogiARm_control
+[3.895s] writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/RogiARm_control/install.log'

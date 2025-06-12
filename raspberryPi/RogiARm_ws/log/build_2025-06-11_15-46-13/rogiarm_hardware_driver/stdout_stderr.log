@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info
+writing ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/dependency_links.txt
+writing entry points to ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/entry_points.txt
+writing requirements to ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/requires.txt
+writing top-level names to ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/top_level.txt
+writing manifest file '../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/SOURCES.txt'
+reading manifest file '../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/SOURCES.txt'
+writing manifest file '../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build
+creating /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build/lib
+creating /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build/lib/rogiarm_hardware_driver
+copying rogiarm_hardware_driver/__init__.py -> /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build/lib/rogiarm_hardware_driver
+copying rogiarm_hardware_driver/driver_node.py -> /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build/lib/rogiarm_hardware_driver
+running install
+running install_lib
+creating /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages/rogiarm_hardware_driver
+copying /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build/lib/rogiarm_hardware_driver/__init__.py -> /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages/rogiarm_hardware_driver
+copying /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build/lib/rogiarm_hardware_driver/driver_node.py -> /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages/rogiarm_hardware_driver
+byte-compiling /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages/rogiarm_hardware_driver/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages/rogiarm_hardware_driver/driver_node.py to driver_node.cpython-312.pyc
+running install_data
+creating /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/ament_index
+creating /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/ament_index/resource_index
+creating /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/ament_index/resource_index/packages
+copying resource/rogiarm_hardware_driver -> /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/ament_index/resource_index/packages
+copying package.xml -> /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/share/rogiarm_hardware_driver
+running install_egg_info
+Copying ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info to /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages/rogiarm_hardware_driver-0.0.0-py3.12.egg-info
+running install_scripts
+Installing driver_node script to /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/rogiarm_hardware_driver
+writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/install.log'

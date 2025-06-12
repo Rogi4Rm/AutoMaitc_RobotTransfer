@@ -1,0 +1,81 @@
+[0.000000] (-) TimerEvent: {}
+[0.001075] (RogiARm_control) JobQueued: {'identifier': 'RogiARm_control', 'dependencies': OrderedDict()}
+[0.001351] (lgpio) JobQueued: {'identifier': 'lgpio', 'dependencies': OrderedDict()}
+[0.001648] (rgpio) JobQueued: {'identifier': 'rgpio', 'dependencies': OrderedDict()}
+[0.001807] (rogiarm_bringup) JobQueued: {'identifier': 'rogiarm_bringup', 'dependencies': OrderedDict()}
+[0.001845] (rogiarm_description) JobQueued: {'identifier': 'rogiarm_description', 'dependencies': OrderedDict()}
+[0.001868] (rogiarm_hardware_driver) JobQueued: {'identifier': 'rogiarm_hardware_driver', 'dependencies': OrderedDict()}
+[0.001913] (RogiARm_control) JobStarted: {'identifier': 'RogiARm_control'}
+[0.015210] (lgpio) JobStarted: {'identifier': 'lgpio'}
+[0.020225] (rgpio) JobStarted: {'identifier': 'rgpio'}
+[0.026357] (rogiarm_bringup) JobStarted: {'identifier': 'rogiarm_bringup'}
+[0.099621] (-) TimerEvent: {}
+[0.200021] (-) TimerEvent: {}
+[0.300393] (-) TimerEvent: {}
+[0.400816] (-) TimerEvent: {}
+[0.501196] (-) TimerEvent: {}
+[0.601730] (-) TimerEvent: {}
+[0.702312] (-) TimerEvent: {}
+[0.802762] (-) TimerEvent: {}
+[0.903289] (-) TimerEvent: {}
+[1.003645] (-) TimerEvent: {}
+[1.104105] (-) TimerEvent: {}
+[1.204840] (-) TimerEvent: {}
+[1.305211] (-) TimerEvent: {}
+[1.406915] (-) TimerEvent: {}
+[1.507440] (-) TimerEvent: {}
+[1.610093] (-) TimerEvent: {}
+[1.628303] (lgpio) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lgpio', 'build', '--build-base', '/home/rogi4rm/RogiARm_ws/build/lgpio/build', 'install', '--record', '/home/rogi4rm/RogiARm_ws/build/lgpio/install.log', '--single-version-externally-managed'], 'cwd': '/home/rogi4rm/RogiARm_ws/lg/PY_LGPIO', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rogi4rm', 'SSH_CLIENT': '192.168.137.1 60276 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/helpers/browser.sh', 'HOME': '/home/rogi4rm', 'OLDPWD': '/home/rogi4rm/RogiARm_ws', 'TERM_PROGRAM_VERSION': '1.100.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-8d4f758e-c4ce-48da-a0c6-d6da585aa750.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/rogi4rm/RogiARm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rogi4rm', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/home/rogi4rm/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cb3ec475bd.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver:/home/rogi4rm/RogiARm_ws/install/rogiarm_description:/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup:/home/rogi4rm/RogiARm_ws/install/RogiARm_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/rogi4rm/RogiARm_ws/build/lgpio', 'SSH_CONNECTION': '192.168.137.1 60276 192.168.137.91 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rogi4rm/RogiARm_ws/build/lgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/lgpio/lib/python3.12/site-packages:/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages:/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages:/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages:/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages:/usr/local/lib/python3.12/dist-packages:/usr/local/lib/python3.12/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1'}, 'shell': False}
+[1.712051] (-) TimerEvent: {}
+[1.812427] (-) TimerEvent: {}
+[1.912884] (-) TimerEvent: {}
+[2.016326] (-) TimerEvent: {}
+[2.052835] (lgpio) StdoutLine: {'line': b'running egg_info\n'}
+[2.090140] (lgpio) StdoutLine: {'line': b'writing ../../build/lgpio/lgpio.egg-info/PKG-INFO\n'}
+[2.092659] (lgpio) StdoutLine: {'line': b'writing dependency_links to ../../build/lgpio/lgpio.egg-info/dependency_links.txt\n'}
+[2.095263] (lgpio) StdoutLine: {'line': b'writing top-level names to ../../build/lgpio/lgpio.egg-info/top_level.txt\n'}
+[2.098137] (lgpio) StderrLine: {'line': b'file lgpio.py (for module lgpio) not found\n'}
+[2.113127] (rgpio) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rgpio', 'build', '--build-base', '/home/rogi4rm/RogiARm_ws/build/rgpio/build', 'install', '--record', '/home/rogi4rm/RogiARm_ws/build/rgpio/install.log', '--single-version-externally-managed'], 'cwd': '/home/rogi4rm/RogiARm_ws/lg/PY_RGPIO', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rogi4rm', 'SSH_CLIENT': '192.168.137.1 60276 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/helpers/browser.sh', 'HOME': '/home/rogi4rm', 'OLDPWD': '/home/rogi4rm/RogiARm_ws', 'TERM_PROGRAM_VERSION': '1.100.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-8d4f758e-c4ce-48da-a0c6-d6da585aa750.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/rogi4rm/RogiARm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rogi4rm', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/rogi4rm/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/home/rogi4rm/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cb3ec475bd.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver:/home/rogi4rm/RogiARm_ws/install/rogiarm_description:/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup:/home/rogi4rm/RogiARm_ws/install/RogiARm_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/rogi4rm/RogiARm_ws/build/rgpio', 'SSH_CONNECTION': '192.168.137.1 60276 192.168.137.91 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rogi4rm/RogiARm_ws/build/rgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages:/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages:/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages:/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages:/home/rogi4rm/RogiARm_ws/install/RogiARm_control/lib/python3.12/site-packages:/usr/local/lib/python3.12/dist-packages:/usr/local/lib/python3.12/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1'}, 'shell': False}
+[2.118584] (-) TimerEvent: {}
+[2.158163] (lgpio) StdoutLine: {'line': b"reading manifest file '../../build/lgpio/lgpio.egg-info/SOURCES.txt'\n"}
+[2.159417] (lgpio) StdoutLine: {'line': b"reading manifest template 'MANIFEST.in'\n"}
+[2.160373] (lgpio) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[2.161751] (lgpio) StdoutLine: {'line': b"writing manifest file '../../build/lgpio/lgpio.egg-info/SOURCES.txt'\n"}
+[2.162905] (lgpio) StdoutLine: {'line': b'running build\n'}
+[2.163369] (lgpio) StdoutLine: {'line': b'running build_py\n'}
+[2.163480] (lgpio) StdoutLine: {'line': b'running build_ext\n'}
+[2.166877] (lgpio) StdoutLine: {'line': b"building '_lgpio' extension\n"}
+[2.168069] (lgpio) StdoutLine: {'line': b'swigging lgpio.i to lgpio_wrap.c\n'}
+[2.169263] (lgpio) StdoutLine: {'line': b'swig -python -o lgpio_wrap.c lgpio.i\n'}
+[2.170343] (lgpio) StderrLine: {'line': b"error: command 'swig' failed: No such file or directory\n"}
+[2.218703] (-) TimerEvent: {}
+[2.275133] (lgpio) CommandEnded: {'returncode': 1}
+[2.275652] (lgpio) JobEnded: {'identifier': 'lgpio', 'rc': 1}
+[2.318858] (-) TimerEvent: {}
+[2.419524] (-) TimerEvent: {}
+[2.521473] (-) TimerEvent: {}
+[2.541816] (rgpio) StdoutLine: {'line': b'running egg_info\n'}
+[2.576256] (rogiarm_bringup) JobEnded: {'identifier': 'rogiarm_bringup', 'rc': 'SIGINT'}
+[2.580839] (rgpio) StdoutLine: {'line': b'writing ../../build/rgpio/rgpio.egg-info/PKG-INFO\n'}
+[2.581160] (rgpio) StdoutLine: {'line': b'writing dependency_links to ../../build/rgpio/rgpio.egg-info/dependency_links.txt\n'}
+[2.581273] (rgpio) StdoutLine: {'line': b'writing top-level names to ../../build/rgpio/rgpio.egg-info/top_level.txt\n'}
+[2.611917] (RogiARm_control) JobEnded: {'identifier': 'RogiARm_control', 'rc': 'SIGINT'}
+[2.621545] (-) TimerEvent: {}
+[2.622995] (rgpio) StdoutLine: {'line': b"reading manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'\n"}
+[2.623312] (rgpio) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[2.623922] (rgpio) StdoutLine: {'line': b"writing manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'\n"}
+[2.624140] (rgpio) StdoutLine: {'line': b'running build\n'}
+[2.624260] (rgpio) StdoutLine: {'line': b'running build_py\n'}
+[2.624395] (rgpio) StdoutLine: {'line': b'running install\n'}
+[2.633711] (rgpio) StdoutLine: {'line': b'running install_lib\n'}
+[2.654810] (rgpio) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.676444] (rgpio) StdoutLine: {'line': b"removing '/home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio-0.2.2.0-py3.12.egg-info' (and everything under it)\n"}
+[2.676863] (rgpio) StdoutLine: {'line': b'Copying ../../build/rgpio/rgpio.egg-info to /home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio-0.2.2.0-py3.12.egg-info\n'}
+[2.677817] (rgpio) StdoutLine: {'line': b'running install_scripts\n'}
+[2.721648] (-) TimerEvent: {}
+[2.821963] (-) TimerEvent: {}
+[2.823160] (rgpio) StdoutLine: {'line': b"writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/rgpio/install.log'\n"}
+[2.910800] (rgpio) JobEnded: {'identifier': 'rgpio', 'rc': 'SIGINT'}
+[2.921636] (rogiarm_description) JobSkipped: {'identifier': 'rogiarm_description'}
+[2.921764] (rogiarm_hardware_driver) JobSkipped: {'identifier': 'rogiarm_hardware_driver'}
+[2.921797] (-) EventReactorShutdown: {}

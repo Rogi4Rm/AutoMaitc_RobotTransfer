@@ -1,0 +1,18 @@
+running egg_info
+creating ../../build/lgpio/lgpio.egg-info
+writing ../../build/lgpio/lgpio.egg-info/PKG-INFO
+writing dependency_links to ../../build/lgpio/lgpio.egg-info/dependency_links.txt
+writing top-level names to ../../build/lgpio/lgpio.egg-info/top_level.txt
+writing manifest file '../../build/lgpio/lgpio.egg-info/SOURCES.txt'
+file lgpio.py (for module lgpio) not found
+reading manifest file '../../build/lgpio/lgpio.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file '../../build/lgpio/lgpio.egg-info/SOURCES.txt'
+running build
+running build_py
+running build_ext
+building '_lgpio' extension
+swigging lgpio.i to lgpio_wrap.c
+swig -python -o lgpio_wrap.c lgpio.i
+error: command 'swig' failed: No such file or directory

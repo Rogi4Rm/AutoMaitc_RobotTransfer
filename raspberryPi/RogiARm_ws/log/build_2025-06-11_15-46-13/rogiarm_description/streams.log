@@ -1,0 +1,34 @@
+[2.313s] Invoking command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_description': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_description build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_description/install.log --single-version-externally-managed install_data
+[2.703s] running egg_info
+[2.704s] creating ../../build/rogiarm_description/rogiarm_description.egg-info
+[2.726s] writing ../../build/rogiarm_description/rogiarm_description.egg-info/PKG-INFO
+[2.726s] writing dependency_links to ../../build/rogiarm_description/rogiarm_description.egg-info/dependency_links.txt
+[2.726s] writing requirements to ../../build/rogiarm_description/rogiarm_description.egg-info/requires.txt
+[2.729s] writing top-level names to ../../build/rogiarm_description/rogiarm_description.egg-info/top_level.txt
+[2.729s] writing manifest file '../../build/rogiarm_description/rogiarm_description.egg-info/SOURCES.txt'
+[2.770s] reading manifest file '../../build/rogiarm_description/rogiarm_description.egg-info/SOURCES.txt'
+[2.771s] writing manifest file '../../build/rogiarm_description/rogiarm_description.egg-info/SOURCES.txt'
+[2.771s] running build
+[2.771s] running build_py
+[2.771s] creating /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build
+[2.771s] creating /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build/lib
+[2.771s] creating /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build/lib/rogiarm_description
+[2.771s] copying rogiarm_description/__init__.py -> /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build/lib/rogiarm_description
+[2.772s] running install
+[2.782s] running install_lib
+[2.804s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages/rogiarm_description
+[2.804s] copying /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build/lib/rogiarm_description/__init__.py -> /home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages/rogiarm_description
+[2.804s] byte-compiling /home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages/rogiarm_description/__init__.py to __init__.cpython-312.pyc
+[2.805s] running install_data
+[2.805s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/ament_index
+[2.805s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/ament_index/resource_index
+[2.807s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/ament_index/resource_index/packages
+[2.807s] copying resource/rogiarm_description -> /home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/ament_index/resource_index/packages
+[2.807s] copying package.xml -> /home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description
+[2.807s] creating /home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/urdf
+[2.808s] copying urdf/rogiarm.urdf.xacro -> /home/rogi4rm/RogiARm_ws/install/rogiarm_description/share/rogiarm_description/urdf
+[2.808s] running install_egg_info
+[2.830s] Copying ../../build/rogiarm_description/rogiarm_description.egg-info to /home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages/rogiarm_description-0.0.0-py3.12.egg-info
+[2.831s] running install_scripts
+[3.016s] writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/rogiarm_description/install.log'
+[3.214s] Invoked command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_description' returned '0': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_description build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_description/install.log --single-version-externally-managed install_data
