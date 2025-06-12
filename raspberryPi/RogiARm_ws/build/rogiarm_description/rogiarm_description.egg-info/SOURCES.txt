@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/rogiarm_description/rogiarm_description.egg-info/PKG-INFO
+../../build/rogiarm_description/rogiarm_description.egg-info/SOURCES.txt
+../../build/rogiarm_description/rogiarm_description.egg-info/dependency_links.txt
+../../build/rogiarm_description/rogiarm_description.egg-info/requires.txt
+../../build/rogiarm_description/rogiarm_description.egg-info/top_level.txt
+../../build/rogiarm_description/rogiarm_description.egg-info/zip-safe
+resource/rogiarm_description
+rogiarm_description/__init__.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+urdf/rogiarm.urdf.xacro

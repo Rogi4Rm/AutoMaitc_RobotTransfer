@@ -1,0 +1,23 @@
+[2.073s] Invoking command in '/home/rogi4rm/RogiARm_ws/lg/PY_RGPIO': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rgpio build --build-base /home/rogi4rm/RogiARm_ws/build/rgpio/build install --record /home/rogi4rm/RogiARm_ws/build/rgpio/install.log --single-version-externally-managed
+[2.517s] running egg_info
+[2.520s] creating ../../build/rgpio/rgpio.egg-info
+[2.553s] writing ../../build/rgpio/rgpio.egg-info/PKG-INFO
+[2.554s] writing dependency_links to ../../build/rgpio/rgpio.egg-info/dependency_links.txt
+[2.555s] writing top-level names to ../../build/rgpio/rgpio.egg-info/top_level.txt
+[2.555s] writing manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'
+[2.612s] reading manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'
+[2.612s] adding license file 'LICENSE'
+[2.612s] writing manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'
+[2.612s] running build
+[2.613s] running build_py
+[2.613s] creating /home/rogi4rm/RogiARm_ws/build/rgpio/build
+[2.613s] creating /home/rogi4rm/RogiARm_ws/build/rgpio/build/lib
+[2.613s] copying rgpio.py -> /home/rogi4rm/RogiARm_ws/build/rgpio/build/lib
+[2.613s] running install
+[2.623s] running install_lib
+[2.643s] copying /home/rogi4rm/RogiARm_ws/build/rgpio/build/lib/rgpio.py -> /home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages
+[2.644s] byte-compiling /home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio.py to rgpio.cpython-312.pyc
+[2.663s] running install_egg_info
+[2.685s] Copying ../../build/rgpio/rgpio.egg-info to /home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio-0.2.2.0-py3.12.egg-info
+[2.686s] running install_scripts
+[2.832s] writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/rgpio/install.log'

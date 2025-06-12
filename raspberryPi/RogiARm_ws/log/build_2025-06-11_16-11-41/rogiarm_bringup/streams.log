@@ -1,0 +1,18 @@
+[2.966s] Invoking command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_bringup': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_bringup build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/install.log --single-version-externally-managed install_data
+[3.491s] running egg_info
+[3.510s] writing ../../build/rogiarm_bringup/rogiarm_bringup.egg-info/PKG-INFO
+[3.515s] writing dependency_links to ../../build/rogiarm_bringup/rogiarm_bringup.egg-info/dependency_links.txt
+[3.521s] writing requirements to ../../build/rogiarm_bringup/rogiarm_bringup.egg-info/requires.txt
+[3.523s] writing top-level names to ../../build/rogiarm_bringup/rogiarm_bringup.egg-info/top_level.txt
+[3.579s] reading manifest file '../../build/rogiarm_bringup/rogiarm_bringup.egg-info/SOURCES.txt'
+[3.585s] writing manifest file '../../build/rogiarm_bringup/rogiarm_bringup.egg-info/SOURCES.txt'
+[3.585s] running build
+[3.587s] running build_py
+[3.587s] running install
+[3.601s] running install_lib
+[3.644s] running install_data
+[3.645s] running install_egg_info
+[3.684s] removing '/home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages/rogiarm_bringup-0.0.0-py3.12.egg-info' (and everything under it)
+[3.687s] Copying ../../build/rogiarm_bringup/rogiarm_bringup.egg-info to /home/rogi4rm/RogiARm_ws/install/rogiarm_bringup/lib/python3.12/site-packages/rogiarm_bringup-0.0.0-py3.12.egg-info
+[3.698s] running install_scripts
+[3.907s] writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/rogiarm_bringup/install.log'

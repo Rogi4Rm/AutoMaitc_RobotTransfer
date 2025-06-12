@@ -1,0 +1,19 @@
+[2.411s] Invoking command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_description': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_description build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_description/install.log --single-version-externally-managed install_data
+[2.821s] running egg_info
+[2.842s] writing ../../build/rogiarm_description/rogiarm_description.egg-info/PKG-INFO
+[2.843s] writing dependency_links to ../../build/rogiarm_description/rogiarm_description.egg-info/dependency_links.txt
+[2.845s] writing requirements to ../../build/rogiarm_description/rogiarm_description.egg-info/requires.txt
+[2.847s] writing top-level names to ../../build/rogiarm_description/rogiarm_description.egg-info/top_level.txt
+[2.899s] reading manifest file '../../build/rogiarm_description/rogiarm_description.egg-info/SOURCES.txt'
+[2.899s] writing manifest file '../../build/rogiarm_description/rogiarm_description.egg-info/SOURCES.txt'
+[2.900s] running build
+[2.900s] running build_py
+[2.901s] running install
+[2.915s] running install_lib
+[2.940s] running install_data
+[2.940s] running install_egg_info
+[2.965s] removing '/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages/rogiarm_description-0.0.0-py3.12.egg-info' (and everything under it)
+[2.965s] Copying ../../build/rogiarm_description/rogiarm_description.egg-info to /home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages/rogiarm_description-0.0.0-py3.12.egg-info
+[2.967s] running install_scripts
+[3.247s] writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/rogiarm_description/install.log'
+[3.361s] Invoked command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_description' returned '0': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_description build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_description/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_description/install.log --single-version-externally-managed install_data

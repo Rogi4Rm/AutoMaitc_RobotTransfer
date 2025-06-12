@@ -1,0 +1,18 @@
+[1.614s] Invoking command in '/home/rogi4rm/RogiARm_ws/lg/PY_LGPIO': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/lgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/lgpio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lgpio build --build-base /home/rogi4rm/RogiARm_ws/build/lgpio/build install --record /home/rogi4rm/RogiARm_ws/build/lgpio/install.log --single-version-externally-managed
+[2.038s] running egg_info
+[2.075s] writing ../../build/lgpio/lgpio.egg-info/PKG-INFO
+[2.078s] writing dependency_links to ../../build/lgpio/lgpio.egg-info/dependency_links.txt
+[2.081s] writing top-level names to ../../build/lgpio/lgpio.egg-info/top_level.txt
+[2.083s] file lgpio.py (for module lgpio) not found
+[2.143s] reading manifest file '../../build/lgpio/lgpio.egg-info/SOURCES.txt'
+[2.144s] reading manifest template 'MANIFEST.in'
+[2.145s] adding license file 'LICENSE'
+[2.146s] writing manifest file '../../build/lgpio/lgpio.egg-info/SOURCES.txt'
+[2.148s] running build
+[2.148s] running build_py
+[2.148s] running build_ext
+[2.152s] building '_lgpio' extension
+[2.154s] swigging lgpio.i to lgpio_wrap.c
+[2.154s] swig -python -o lgpio_wrap.c lgpio.i
+[2.155s] error: command 'swig' failed: No such file or directory
+[2.260s] Invoked command in '/home/rogi4rm/RogiARm_ws/lg/PY_LGPIO' returned '1': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/lgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/lgpio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lgpio build --build-base /home/rogi4rm/RogiARm_ws/build/lgpio/build install --record /home/rogi4rm/RogiARm_ws/build/lgpio/install.log --single-version-externally-managed

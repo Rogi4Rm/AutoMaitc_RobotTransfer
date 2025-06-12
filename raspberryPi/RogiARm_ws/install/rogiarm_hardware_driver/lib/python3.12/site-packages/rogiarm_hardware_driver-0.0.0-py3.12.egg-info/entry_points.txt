@@ -1,0 +1,2 @@
+[console_scripts]
+driver_node = rogiarm_hardware_driver.driver_node:main

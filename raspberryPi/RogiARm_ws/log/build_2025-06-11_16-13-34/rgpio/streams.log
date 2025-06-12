@@ -1,0 +1,17 @@
+[2.343s] Invoking command in '/home/rogi4rm/RogiARm_ws/lg/PY_RGPIO': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rgpio build --build-base /home/rogi4rm/RogiARm_ws/build/rgpio/build install --record /home/rogi4rm/RogiARm_ws/build/rgpio/install.log --single-version-externally-managed
+[2.854s] running egg_info
+[2.892s] writing ../../build/rgpio/rgpio.egg-info/PKG-INFO
+[2.894s] writing dependency_links to ../../build/rgpio/rgpio.egg-info/dependency_links.txt
+[2.896s] writing top-level names to ../../build/rgpio/rgpio.egg-info/top_level.txt
+[2.967s] reading manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'
+[2.967s] adding license file 'LICENSE'
+[2.968s] writing manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'
+[2.968s] running build
+[2.968s] running build_py
+[2.969s] running install
+[2.980s] running install_lib
+[3.005s] running install_egg_info
+[3.028s] removing '/home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio-0.2.2.0-py3.12.egg-info' (and everything under it)
+[3.028s] Copying ../../build/rgpio/rgpio.egg-info to /home/rogi4rm/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio-0.2.2.0-py3.12.egg-info
+[3.029s] running install_scripts
+[3.180s] writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/rgpio/install.log'

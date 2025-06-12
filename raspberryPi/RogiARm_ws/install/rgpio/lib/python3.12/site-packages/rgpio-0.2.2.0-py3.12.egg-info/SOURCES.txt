@@ -1,0 +1,9 @@
+LICENSE
+README.md
+rgpio.py
+setup.py
+../../build/rgpio/rgpio.egg-info/PKG-INFO
+../../build/rgpio/rgpio.egg-info/SOURCES.txt
+../../build/rgpio/rgpio.egg-info/dependency_links.txt
+../../build/rgpio/rgpio.egg-info/not-zip-safe
+../../build/rgpio/rgpio.egg-info/top_level.txt

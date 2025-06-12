@@ -1,0 +1,17 @@
+[3.070s] Invoking command in '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/lg/PY_RGPIO': PYTHONPATH=/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rgpio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rgpio/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rgpio build --build-base /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rgpio/build install --record /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rgpio/install.log --single-version-externally-managed
+[3.580s] running egg_info
+[3.601s] writing ../../build/rgpio/rgpio.egg-info/PKG-INFO
+[3.601s] writing dependency_links to ../../build/rgpio/rgpio.egg-info/dependency_links.txt
+[3.607s] writing top-level names to ../../build/rgpio/rgpio.egg-info/top_level.txt
+[3.658s] reading manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'
+[3.659s] adding license file 'LICENSE'
+[3.661s] writing manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'
+[3.661s] running build
+[3.661s] running build_py
+[3.661s] running install
+[3.676s] running install_lib
+[3.703s] running install_egg_info
+[3.746s] removing '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio-0.2.2.0-py3.12.egg-info' (and everything under it)
+[3.750s] Copying ../../build/rgpio/rgpio.egg-info to /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio-0.2.2.0-py3.12.egg-info
+[3.754s] running install_scripts
+[3.946s] writing list of installed files to '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rgpio/install.log'

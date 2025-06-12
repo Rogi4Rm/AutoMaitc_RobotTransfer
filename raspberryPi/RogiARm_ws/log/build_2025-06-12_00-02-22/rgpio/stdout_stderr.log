@@ -1,0 +1,16 @@
+running egg_info
+writing ../../build/rgpio/rgpio.egg-info/PKG-INFO
+writing dependency_links to ../../build/rgpio/rgpio.egg-info/dependency_links.txt
+writing top-level names to ../../build/rgpio/rgpio.egg-info/top_level.txt
+reading manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/rgpio/rgpio.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_egg_info
+removing '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio-0.2.2.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/rgpio/rgpio.egg-info to /home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/install/rgpio/lib/python3.12/site-packages/rgpio-0.2.2.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/rogi4rm/git/AutoMaitc_RobotTransfer/raspberryPi/RogiARm_ws/build/rgpio/install.log'

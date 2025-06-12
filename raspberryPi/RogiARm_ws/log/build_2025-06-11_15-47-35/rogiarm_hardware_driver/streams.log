@@ -1,0 +1,21 @@
+[2.327s] Invoking command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_hardware_driver': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_hardware_driver build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/install.log --single-version-externally-managed install_data
+[2.770s] running egg_info
+[2.789s] writing ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/PKG-INFO
+[2.790s] writing dependency_links to ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/dependency_links.txt
+[2.793s] writing entry points to ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/entry_points.txt
+[2.794s] writing requirements to ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/requires.txt
+[2.794s] writing top-level names to ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/top_level.txt
+[2.836s] reading manifest file '../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/SOURCES.txt'
+[2.837s] writing manifest file '../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info/SOURCES.txt'
+[2.837s] running build
+[2.837s] running build_py
+[2.838s] running install
+[2.848s] running install_lib
+[2.875s] running install_data
+[2.879s] running install_egg_info
+[2.904s] removing '/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages/rogiarm_hardware_driver-0.0.0-py3.12.egg-info' (and everything under it)
+[2.906s] Copying ../../build/rogiarm_hardware_driver/rogiarm_hardware_driver.egg-info to /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages/rogiarm_hardware_driver-0.0.0-py3.12.egg-info
+[2.907s] running install_scripts
+[3.111s] Installing driver_node script to /home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/rogiarm_hardware_driver
+[3.113s] writing list of installed files to '/home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/install.log'
+[3.331s] Invoked command in '/home/rogi4rm/RogiARm_ws/src/rogiarm_hardware_driver' returned '0': PYTHONPATH=/home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rogi4rm/RogiARm_ws/install/rogiarm_hardware_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rogiarm_hardware_driver build --build-base /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/build install --record /home/rogi4rm/RogiARm_ws/build/rogiarm_hardware_driver/install.log --single-version-externally-managed install_data

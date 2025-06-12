@@ -5,7 +5,7 @@ function Header() {
   return (
     <header>
       <img src={process.env.PUBLIC_URL + '/assets/image/Logo2.png'} alt="RogiArm Logo" className="logo" />
-      <h1>RogiArm</h1>
+      <h1>RogiARm</h1>
       <p>로봇 팔을 이용한 자동 분류 시스템</p>
     </header>
   );

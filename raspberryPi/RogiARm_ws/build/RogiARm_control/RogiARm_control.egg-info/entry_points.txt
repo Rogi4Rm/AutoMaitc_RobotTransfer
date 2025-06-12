@@ -1,0 +1,2 @@
+[console_scripts]
+keyboard_control_node = RogiARm_control.keyboard_control_node:main

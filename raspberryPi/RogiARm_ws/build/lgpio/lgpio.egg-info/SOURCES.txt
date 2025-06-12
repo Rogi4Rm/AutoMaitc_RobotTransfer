@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+lgpio.i
+lgpio_extra.py
+setup.py
+../../build/lgpio/lgpio.egg-info/PKG-INFO
+../../build/lgpio/lgpio.egg-info/SOURCES.txt
+../../build/lgpio/lgpio.egg-info/dependency_links.txt
+../../build/lgpio/lgpio.egg-info/not-zip-safe
+../../build/lgpio/lgpio.egg-info/top_level.txt
+src/lgpio.h
