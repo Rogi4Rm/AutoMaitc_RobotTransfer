@@ -1,3 +1,27 @@
+# ✅ 공통
 node_modules/
+dist/
+.env
+.env.*  # 예: .env.local, .env.production
+
+# ✅ Firebase 관련
+firebase-debug.log
+.firebase/
+.firebaserc
+firebase.json
+
+# ✅ Vite 관련
+.vite/
+
+# ✅ OS별 불필요 파일
 .DS_Store
-client/build/
+Thumbs.db
+
+# ✅ IDE 설정 (VSCode 등)
+.vscode/
+.idea/
+*.log
+
+# ✅ 백엔드 (build 또는 TS 사용 시)
+build/
+*.tsbuildinfo
