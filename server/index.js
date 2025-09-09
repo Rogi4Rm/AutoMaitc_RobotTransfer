@@ -14,10 +14,7 @@ require("./serial/serialListener");
 const app = express();
 
 // CORS 미들웨어 적용
-const allowedOrigins = [
-  "http://localhost:3000", // 개발용
-  "https://rogi4rm.netlify.app", // Netlify 프론트엔드 주소
-];
+const allowedOrigins = process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(",") : [];
 
 app.use(cors({
   origin: function (origin, callback) {
@@ -44,7 +41,7 @@ app.get("/", (req, res) => {
 });
 
 // 서버 포트 설정 및 실행
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
