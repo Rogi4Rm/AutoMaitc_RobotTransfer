@@ -24,7 +24,7 @@ const db = new sqlite3.Database(DB_FILE, (err) => {
     db.run(`
       CREATE TABLE IF NOT EXISTS videos (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        date TEXT NOT NULL,
+        date TEXT NOT NULL UNIQUE,
         url TEXT NOT NULL,
         boxCounts TEXT NOT NULL
       )
@@ -42,6 +42,34 @@ export function getAllStats(): Promise<IStats[]> {
   });
 }
 
+// 특정 날짜의 통계 조회 함수
+export function getStatsByDate(date: string): Promise<IStats> {
+    return new Promise((resolve, reject) => {
+        db.get("SELECT * FROM stats WHERE date = ?", [date], (err, row: IStats) => {
+            if (err) reject(err);
+            else resolve(row);
+        });
+    });
+}
+
+// 모든 날짜 조회 함수
+export function getAllDates(): Promise<{ file: string, time: string }[]> {
+    return new Promise((resolve, reject) => {
+        db.all("SELECT date FROM stats ORDER BY date DESC", [], (err, rows: { date: string }[]) => {
+            if (err) {
+                reject(err);
+            } else {
+                const formattedDates = rows.map(row => ({
+                    file: row.date,
+                    time: row.date
+                }));
+                resolve(formattedDates);
+            }
+        });
+    });
+}
+
+
 // 통계 추가/수정 함수
 export function insertStats(data: { date: string; red: number; green: number; blue: number; }): Promise<void> {
     return new Promise((resolve, reject) => {
@@ -53,5 +81,23 @@ export function insertStats(data: { date: string; red: number; green: number; bl
     });
 }
 
-// (추가) 필요한 다른 DB 함수들도 여기에 Promise 기반으로 만드세요.
-// ex: addVideo, getAllVideos 등...
+// 비디오 추가 함수
+export function addVideo(date: string, url: string, boxCounts: IBoxCounts): Promise<void> {
+    return new Promise((resolve, reject) => {
+        const sql = `INSERT INTO videos (date, url, boxCounts) VALUES (?, ?, ?)`;
+        db.run(sql, [date, url, JSON.stringify(boxCounts)], (err) => {
+            if (err) reject(err);
+            else resolve();
+        });
+    });
+}
+
+// 모든 비디오 조회 함수
+export function getAllVideos(): Promise<IVideo[]> {
+    return new Promise((resolve, reject) => {
+        db.all("SELECT * FROM videos ORDER BY date DESC", [], (err, rows: IVideo[]) => {
+            if (err) reject(err);
+            else resolve(rows);
+        });
+    });
+}
