@@ -1,14 +1,23 @@
 import React from 'react';
-import './Header.css'; //Header스타일 임포트
+import { Link } from 'react-router-dom';
+import './Header.css';
+import logo from '../assets/image/Logo.png';
 
-function Header() {
+const Header = () => {
+  // ✅ 문제가 되는 라인을 삭제하거나 주석 처리
+  // const API_URL = process.env.REACT_APP_API_URL;
+
   return (
     <header>
-      <img src={process.env.PUBLIC_URL + '/assets/image/Logo2.png'} alt="RogiArm Logo" className="logo" />
-      <h1>RogiARm</h1>
-      <p>로봇 팔을 이용한 자동 분류 시스템</p>
+      <Link to="/">
+        <img src={logo} alt="로고" className="logo" />
+      </Link>
+      <div>
+        <h1>RogiARm</h1>
+        <p>자동 물류 분류 시스템</p>
+      </div>
     </header>
   );
-}
+};
 
 export default Header;
