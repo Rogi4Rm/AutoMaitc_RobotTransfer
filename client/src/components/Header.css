@@ -1,32 +1,36 @@
-/*헤더의 스타일*/
+/* client/src/components/Header.css */
 header {
   display: flex;
-  align-items: center;  /* 세로 중앙 정렬 */
-  justify-content: center;  /* 텍스트 중앙 정렬 */
+  align-items: center;
+  justify-content: center;
   padding: 32px;
   background-color: #333;
   position: relative;
-  flex-direction: column;  /* 수직 방향으로 정렬 */
-  text-align: center; /* 중앙 정렬 */
+  width: 100%;
+  box-sizing: border-box; /* padding이 너비에 포함되도록 설정 */
 }
-/*로고 스타일*/
+
 .logo {
   position: absolute;
-  left: 20px;  /* 로고를 왼쪽 끝으로 배치 */
-  width: 50px;  /* 로고 크기 */
+  left: 20px;
+  width: 50px;
   height: auto;
 }
-/*제목,부제의 스타일*/
+
+header div {
+  text-align: center;
+}
+
 header h1 {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
-  margin: 5px 0;  /* 위아래 여백 추가 */
+  margin: 5px 0;
 }
-/*부제의 스타일*/
+
 header p {
   font-size: 14px;
   font-weight: bold;
   color: #ff6;
-  margin: 5px 0;  /* 위아래 여백 추가 */
+  margin: 5px 0;
 }

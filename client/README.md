@@ -1,39 +1,69 @@
-# 🎨 RogiArm 프로젝트 - 프론트엔드
+# React + TypeScript + Vite
 
-## 📦 사용 라이브러리
-### ⚛️ ReactJS
-- react@19.1.0
-- react-dom@19.1.0
-- react-router-dom@7.5.3 - 페이지 라우팅
-- react-scripts@5.0.1 - CRA 기반 개발 도구
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### 📡 네트워크
-- axios@1.9.0 - HTTP 클라이언트
+Currently, two official plugins are available:
 
-## ✨ 주요 기능
-- 🖼️ RogiArm의 UI/UX 구현  
-- 🎮 하드웨어 컨트롤을 위한 컨트롤 페이지  
-- 📊 백엔드에 저장된 데이터 시각화  
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🧠 기술 포인트 
-- 🧩 `react-hook-form` + `드래그 앤 드롭` 조합으로 UX 강화  
-- 🔒 CORS 이슈 해결을 통해 클라이언트-서버 연동 안정화
+## Expanding the ESLint configuration
 
-## 🧱 어려웠던 점 및 해결 방법
-- 🛠️ **차체제어**: CSS 오류를 flex로 해결하여 레이아웃 정리  
-- 🌐 **CORS**: 백엔드 수정 → 프론트 재연결로 정상 작동  
-- ✂️ **더미데이터**: `'dummy-'` 문자열 제거하여 깔끔한 표시 구현
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## 📅 날짜별 현황
-- **25.06.11**: ✅ 백엔드 서버와 프론트엔드 배포 성공으로 서로의 데이터 확인
-- **25.05.29**: ✅ 백엔드 서버와 프론트 Data 페이지 연동, 더미데이터 확인  
-- **25.05.22**: ⚠️ 깃허브 충돌로 백엔드 파일 삭제, 재구성 필요  
-- **25.05.15**: 🧪 Data 페이지 초안 생성  
-- **25.05.07**: 🏗️ 프론트 작업 시작 (Home, Control 페이지)
+```js
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-## 🚀 클라이언트 실행 방법
-```bash
-cd client
-npm install
-npm start
+      // Remove tseslint.configs.recommended and replace with this
+      ...tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
