@@ -7,6 +7,9 @@ import './serial/serialListener';
 
 const app = express();
 const PORT = process.env.PORT;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
 
 // 미들웨어 설정
 app.use(cors()); // CORS 허용
@@ -19,9 +22,4 @@ app.use('/stats', statsRouter);
 // 루트 경로
 app.get('/', (req, res) => {
   res.send('TypeScript Express 서버가 실행 중입니다!');
-});
-
-// 서버 실행
-app.listen(PORT, () => {
-  console.log(`서버가 http://localhost:${PORT} 에서 실행 중입니다.`);
 });

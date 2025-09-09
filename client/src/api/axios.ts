@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 const instance = axios.create({
   baseURL: API_URL,
-  timeout: 5000,  // 요청 제한 시간 (필요 시 설정)
+  timeout: 5000,
   headers: {
     'Content-Type': 'application/json',
   },
