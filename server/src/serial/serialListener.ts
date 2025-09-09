@@ -26,18 +26,6 @@ try {
   });
 
 } catch (error) {
-    console.error(`${PORT_PATH} 포트를 여는 데 실패했습니다. 더미 데이터 모드로 전환합니다.`);
-    
-    // 1분마다 더미 데이터 생성
-    setInterval(() => {
-        const dummyData = {
-            date: new Date().toISOString(),
-            red: Math.floor(Math.random() * 10),
-            green: Math.floor(Math.random() * 10),
-            blue: Math.floor(Math.random() * 10),
-        };
-        insertStats(dummyData)
-            .then(() => console.log('더미 데이터 DB 저장 완료:', dummyData))
-            .catch(err => console.error('더미 데이터 저장 실패:', err));
-    }, 600000); // 1분
+    console.error(`${PORT_PATH} 포트를 여는 데 실패했습니다.`, error);
+    // (선택) 포트 연결 실패 시 예시처럼 더미 데이터를 생성하는 로직을 여기에 추가할 수 있습니다.
 }

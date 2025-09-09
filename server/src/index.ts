@@ -10,7 +10,7 @@ import cameraRouter from './routes/camera.router';
 import './serial/serialListener';
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 // 미들웨어 설정
 app.use(cors()); // CORS 허용
