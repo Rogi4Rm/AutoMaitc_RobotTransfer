@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios, { API_URL } from '../api/axios';
-import '../pages/Control.css';
+import '../pages-style/Control.css';
 
 const Control = () => {
   // 레이더 거리 데이터

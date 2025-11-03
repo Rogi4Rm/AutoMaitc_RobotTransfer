@@ -1,5 +1,6 @@
 /*푸터의 스타일*/
 footer {
+  width: 100%;
   background-color: #333;
   color: white;
   text-align: center;

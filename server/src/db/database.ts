@@ -1,103 +1,95 @@
-import sqlite3 from "sqlite3";
-import path from "path";
-import { IVideo, IStats, IBoxCounts } from "../types";
+import sqlite3 from 'sqlite3';
+import { open } from 'sqlite';
+import path from 'path';
 
-// DB 파일 경로 설정 (src/db/sqlite.db 에 생성됨)
-const DB_FILE = path.resolve(__dirname, "sqlite.db");
+// DB 파일 경로
+const DB_PATH = path.join(__dirname, 'sqlite.db');
 
-// DB 연결
-const db = new sqlite3.Database(DB_FILE, (err) => {
-  if (err) return console.error("DB 연결 오류:", err.message);
+// DB 타입 정의 (실제 구조에 맞게 수정 필요)
+interface StatsData {
+  date: string;
+  red: number;
+  blue: number;
+  white: number;
+  total: number;
+}
 
-  console.log("SQLite DB에 연결되었습니다.");
-
-  // 테이블이 없으면 생성
-  db.serialize(() => {
-    db.run(`
-      CREATE TABLE IF NOT EXISTS stats (
-        date TEXT PRIMARY KEY,
-        red_boxes INTEGER NOT NULL,
-        green_boxes INTEGER NOT NULL,
-        blue_boxes INTEGER NOT NULL
-      )
-    `);
-    db.run(`
-      CREATE TABLE IF NOT EXISTS videos (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        date TEXT NOT NULL UNIQUE,
-        url TEXT NOT NULL,
-        boxCounts TEXT NOT NULL
-      )
-    `);
-  });
-});
-
-// 모든 통계 조회 함수
-export function getAllStats(): Promise<IStats[]> {
-  return new Promise((resolve, reject) => {
-    db.all("SELECT * FROM stats ORDER BY date DESC", [], (err, rows: IStats[]) => {
-      if (err) reject(err);
-      else resolve(rows);
-    });
+// DB 열기
+async function openDb() {
+  return open({
+    filename: DB_PATH,
+    driver: sqlite3.Database,
   });
 }
 
-// 특정 날짜의 통계 조회 함수
-export function getStatsByDate(date: string): Promise<IStats> {
-    return new Promise((resolve, reject) => {
-        db.get("SELECT * FROM stats WHERE date = ?", [date], (err, row: IStats) => {
-            if (err) reject(err);
-            else resolve(row);
-        });
-    });
+// 테이블 초기화
+(async () => {
+  const db = await openDb();
+  await db.exec(`
+    CREATE TABLE IF NOT EXISTS stats (
+      date TEXT PRIMARY KEY,
+      red INTEGER DEFAULT 0,
+      blue INTEGER DEFAULT 0,
+      white INTEGER DEFAULT 0,
+      total INTEGER DEFAULT 0
+    );
+    CREATE TABLE IF NOT EXISTS videos (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      date TEXT,
+      url TEXT,
+      boxCounts TEXT
+    );
+  `);
+})();
+
+// --- Stats 관련 함수 ---
+
+export async function getAllStats() {
+  const db = await openDb();
+  return db.all('SELECT * FROM stats ORDER BY date DESC');
 }
 
-// 모든 날짜 조회 함수
-export function getAllDates(): Promise<{ file: string, time: string }[]> {
-    return new Promise((resolve, reject) => {
-        db.all("SELECT date FROM stats ORDER BY date DESC", [], (err, rows: { date: string }[]) => {
-            if (err) {
-                reject(err);
-            } else {
-                const formattedDates = rows.map(row => ({
-                    file: row.date,
-                    time: row.date
-                }));
-                resolve(formattedDates);
-            }
-        });
-    });
+export async function getStatsByDate(date: string) {
+  const db = await openDb();
+  return db.get('SELECT * FROM stats WHERE date = ?', date);
 }
 
-
-// 통계 추가/수정 함수
-export function insertStats(data: { date: string; red: number; green: number; blue: number; }): Promise<void> {
-    return new Promise((resolve, reject) => {
-        const sql = `INSERT OR REPLACE INTO stats (date, red_boxes, green_boxes, blue_boxes) VALUES (?, ?, ?, ?)`;
-        db.run(sql, [data.date, data.red, data.green, data.blue], (err) => {
-            if (err) reject(err);
-            else resolve();
-        });
-    });
+export async function insertStats(data: StatsData) {
+  const db = await openDb();
+  const { date, red, blue, white, total } = data;
+  
+  // ON CONFLICT...UPDATE: 이미 날짜가 존재하면 값을 덮어씁니다.
+  await db.run(
+    `INSERT INTO stats (date, red, blue, white, total)
+     VALUES (?, ?, ?, ?, ?)
+     ON CONFLICT(date) DO UPDATE SET
+       red = excluded.red,
+       blue = excluded.blue,
+       white = excluded.white,
+       total = excluded.total`,
+    [date, red, blue, white, total]
+  );
 }
 
-// 비디오 추가 함수
-export function addVideo(date: string, url: string, boxCounts: IBoxCounts): Promise<void> {
-    return new Promise((resolve, reject) => {
-        const sql = `INSERT INTO videos (date, url, boxCounts) VALUES (?, ?, ?)`;
-        db.run(sql, [date, url, JSON.stringify(boxCounts)], (err) => {
-            if (err) reject(err);
-            else resolve();
-        });
-    });
+// --- Videos 관련 함수 ---
+
+export async function getAllVideos() {
+  const db = await openDb();
+  return db.all('SELECT * FROM videos ORDER BY date DESC');
 }
 
-// 모든 비디오 조회 함수
-export function getAllVideos(): Promise<IVideo[]> {
-    return new Promise((resolve, reject) => {
-        db.all("SELECT * FROM videos ORDER BY date DESC", [], (err, rows: IVideo[]) => {
-            if (err) reject(err);
-            else resolve(rows);
-        });
-    });
+export async function addVideo(date: string, url: string, boxCounts: string) {
+  const db = await openDb();
+  await db.run(
+    'INSERT INTO videos (date, url, boxCounts) VALUES (?, ?, ?)',
+    [date, url, boxCounts]
+  );
+}
+
+// --- List 관련 함수 ---
+
+export async function getAllDates() {
+  const db = await openDb();
+  // stats 테이블에서 날짜만 중복 없이 가져오기
+  return db.all('SELECT DISTINCT date FROM stats ORDER BY date DESC');
 }
