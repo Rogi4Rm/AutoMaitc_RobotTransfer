@@ -1,22 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import './Home.css'; // 스타일시트 불러오기
+import { useState, useEffect } from 'react';
+import '../pages-style/Home.css'; // 스타일시트 불러오기
+
+// 이미지 import
+import image2 from '../assets/image/2.PNG';
+import image4 from '../assets/image/4.png';
+import image5 from '../assets/image/5.png';
+import image1 from '../assets/image/1.PNG';
+import image3 from '../assets/image/3.PNG';
 
 // 상단 팀 이미지(슬라이드에 사용될 수 있음)
 const images = [
-  { src: "/assets/image/2.PNG", alt: '팀 1' }
+  { src: image2, alt: '팀 1' }
 ];
 
 // 주요 기능 설명에 사용할 이미지와 설명 문구들
 const targetImages = [
   {
-    // 수정된 부분: process.env.PUBLIC_URL 제거
-    src: './assets/image/4.png',
+    src: image4,
     alt: '자동 분류 시스템',
     description: ['필요한 물건을 분리한다']
   },
   {
-    // 수정된 부분: process.env.PUBLIC_URL 제거
-    src: './assets/image/5.png',
+    src: image5,
     alt: '안전 운송 로봇',
     description: ['정해진 포인트까지 장애물을 피하며', '안전하게 이동한다']
   }
@@ -116,8 +121,8 @@ function Home() {
       <div className="future-section">
         <h2>미래</h2>
         <div className='future-imgs'>
-          <img src='/assets/image/1.PNG' alt="미래 1" />
-          <img src='/assets/image/3.PNG' alt="미래 2" />
+          <img src={image1} alt="미래 1" />
+          <img src={image3} alt="미래 2" />
         </div>
       </div>
 

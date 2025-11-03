@@ -1,12 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
+import '../components-style/Header.css';
 import logo from '../assets/image/Logo.png';
 
 const Header = () => {
-  // ✅ 문제가 되는 라인을 삭제하거나 주석 처리
-  // const API_URL = process.env.REACT_APP_API_URL;
-
   return (
     <header>
       <Link to="/">

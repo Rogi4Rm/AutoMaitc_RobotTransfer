@@ -1,7 +1,7 @@
 // React 및 훅 import
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios, { API_URL } from '../api/axios';
-import "./Data.css";
+import "../pages-style/Data.css";
 
 export default function RogiArmDashboard() {
   // 날짜 리스트 상태
